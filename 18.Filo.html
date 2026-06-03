@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Pensadores da Filosofia que Moldaram a Física (Global)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #2a2a3a, #4a4a6a);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            color: #fef0d9;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(4px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-brain"></i> A Física como Reflexão Filosófica Global</div>
+        <h1><i class="fas fa-book-open"></i> Pensadores da Filosofia que Moldaram a Física</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">Da Grécia Antiga à Ásia, da África às Américas — uma jornada pelos filósofos e cientistas que questionaram os fundamentos da realidade, do método e do conhecimento físico.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Introdução -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-question-circle"></i> O Casamento entre Filosofia e Física</div>
+        <p>A física nasceu da filosofia. Até o século XIX, o que chamamos de "física" era denominado "filosofia natural". Os grandes físicos – de Aristóteles a Newton, de Einstein a Heisenberg – também eram filósofos profundos. A filosofia da física se dedica a questões como: o que é realidade? O espaço e o tempo são absolutos ou relacionais? O que uma teoria científica representa? Existe um mundo independente do observador? A mecânica quântica descreve o mundo como ele é ou apenas o que podemos medir? Esta seção explora os pensadores que, com suas reflexões, transformaram a própria física — agora incluindo contribuições de todas as regiões do mundo.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “A filosofia da física é a mãe de todas as ciências naturais. Sem ela, a física seria um conjunto de receitas sem significado.” — Adaptado de vários pensadores <i class="fas fa-quote-right"></i>
+        </div>
+    </div>
+
+    <!-- ===================== FILÓSOFOS DA ANTIGUIDADE E IDADE MÉDIA ===================== -->
+    <div class="section-title"><i class="fas fa-scroll"></i> Antiguidade e Idade Média – Os Fundamentos</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-water"></i><h3>Tales de Mileto (c.624-546 a.C.)</h3><p>Primeiro filósofo ocidental a buscar uma explicação natural para o cosmos (a água como princípio). Inaugurou a atitude racional de questionar o mundo sem recorrer a mitos.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Leucipo e Demócrito (séc. V a.C.)</h3><p>Criadores do atomismo: tudo é composto por átomos indivisíveis e vazio. Uma intuição filosófica que antecipou a física atômica em mais de 2000 anos.</p></div>
+        <div class="card"><i class="fas fa-chalkboard"></i><h3>Platão (428-348 a.C.)</h3><p>No Timeu, propôs que o cosmos é ordenado matematicamente (sólidos platônicos). Influenciou a astronomia e a ideia de que a realidade última é matemática.</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Aristóteles (384-322 a.C.)</h3><p>Criador da "Física" (qualitativa, teleológica). Dominou o pensamento científico por 2000 anos. Seus conceitos de lugar natural, movimento violento e éter foram alvos da revolução científica.</p></div>
+        <div class="card"><i class="fas fa-question-circle"></i><h3>João Filopono (c.490-570)</h3><p>Crítico da física aristotélica, desenvolveu a teoria do "ímpeto" – precursor da inércia. Demonstrou que a filosofia pode corrigir a ciência com base em argumentos racionais.</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>Tomás de Aquino (1225-1274)</h3><p>Integrou aristotelismo com teologia cristã. Sua filosofia da natureza influenciou o pensamento medieval e a relação entre fé e razão.</p></div>
+        <div class="card"><i class="fas fa-globe"></i><h3>Nicolau de Cusa (1401-1464)</h3><p>Defendeu um universo infinito e a rotação da Terra, antecipando Copérnico e Giordano Bruno. Usou a filosofia para argumentar contra o geocentrismo.</p></div>
+    </div>
+
+    <!-- ===================== IDADE MODERNA (EUROPA E AMÉRICAS) ===================== -->
+    <div class="section-title"><i class="fas fa-flask"></i> Idade Moderna (1453–1789) – Método, Realidade e o Nascimento da Ciência</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Francis Bacon (1561-1626) - Inglaterra</h3><p>Pai do empirismo e do método científico indutivo. Defendeu que o conhecimento deve vir da observação e experimentação, não da autoridade. Influenciou a Royal Society.</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>René Descartes (1596-1650) - França</h3><p>Dualismo mente-matéria, mecanismo, geometria analítica. Sua filosofia sustentou a física mecanicista: o mundo é como um relógio, regido por leis matemáticas.</p></div>
+        <div class="card"><i class="fas fa-calculator"></i><h3>Blaise Pascal (1623-1662) - França</h3><p>Filósofo da probabilidade, do vácuo e da fé. Suas reflexões sobre a ordem geométrica e a ordem do coração influenciaram a filosofia da ciência.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Baruch Spinoza (1632-1677) - Países Baixos</h3><p>Monismo substancial (Deus ou Natureza). Sua visão determinista e matemática do universo influenciou Einstein e a física moderna.</p></div>
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Gottfried Leibniz (1646-1716) - Alemanha</h3><p>Filosofia da força e do princípio da razão suficiente. Defendeu o espaço relacional contra o absoluto newtoniano. Precursor da energia cinética.</p></div>
+        <div class="card"><i class="fas fa-eye"></i><h3>George Berkeley (1685-1753) - Irlanda</h3><p>"Ser é ser percebido" (esse est percipi). Criticou o conceito de matéria e espaço absoluto de Newton, influenciando o positivismo posterior.</p></div>
+        <div class="card"><i class="fas fa-question-circle"></i><h3>David Hume (1711-1776) - Escócia</h3><p>Empirista radical, questionou a causalidade e a indução. Seu ceticismo desafiou a base da física newtoniana e foi uma "pedra no sapato" de Kant.</p></div>
+        <div class="card"><i class="fas fa-clock"></i><h3>Immanuel Kant (1724-1804) - Alemanha</h3><p>Síntese entre empirismo e racionalismo. Sua obra "Metafísica dos Costumes da Natureza" e "Princípios Metafísicos da Ciência Natural" influenciaram a filosofia da física. O espaço e o tempo são formas a priori da sensibilidade.</p></div>
+        <div class="card"><i class="fas fa-users"></i><h3>Jean-Jacques Rousseau (1712-1778) - França</h3><p>Embora mais político, suas ideias sobre a natureza humana influenciaram o pensamento científico e a relação entre ciência e sociedade.</p></div>
+    </div>
+
+    <!-- FILÓSOFOS DA AMÉRICA LATINA E AMÉRICAS (IDADE MODERNA) -->
+    <div class="section-title"><i class="fas fa-globe-americas"></i> Pensadores das Américas (colonial e moderna)</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-church"></i><h3>Antônio Vieira (1608-1697) - Brasil/Portugal</h3><p>Jesuíta, filósofo moral e teólogo. Suas reflexões sobre a natureza e a razão influenciaram o pensamento colonial brasileiro.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Carlos de Sigüenza y Góngora (1645-1700) - México</h3><p>Primeiro cientista nativo da Nova Espanha. Combinou filosofia, astronomia e geografia, questionando a autoridade europeia.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Eugenio Espejo (1747-1795) - Equador</h3><p>Médico, filósofo e escritor. Defendeu a ciência e o pensamento crítico na América espanhola, influenciado pelo Iluminismo.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>José Celestino Mutis (1732-1808) - Colômbia/Espanha</h3><p>Naturalista e filósofo, liderou a Expedição Botânica e introduziu as ideias de Newton e Lineu na América.</p></div>
+    </div>
+
+    <!-- FILÓSOFOS DA ÁSIA (IDADE MODERNA) -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Pensadores da Ásia (pré-modernos e modernos)</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-yin-yang"></i><h3>Wang Fuzhi (1619-1692) - China</h3><p>Filósofo neoconfucionista que enfatizou a observação empírica e a razão natural, antecipando aspectos do método científico.</p></div>
+        <div class="card"><i class="fas fa-eye"></i><h3>Ibn al-Haytham (Alhazen, 965-1040) - Iraque/Egito</h3><p>(Já citado, mas fundamental). Seu método experimental e sua óptica geométrica são marcos da filosofia da ciência islâmica.</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>Mulla Sadra (1571-1640) - Pérsia</h3><p>Filósofo islâmico que desenvolveu a "filosofia transcendente", integrando metafísica, física e intuição.</p></div>
+        <div class="card"><i class="fas fa-university"></i><h3>Hayashi Razan (1583-1657) - Japão</h3><p>Filósofo neoconfucionista que introduziu a racionalidade e a ordem natural no pensamento japonês, influenciando o estudo da natureza.</p></div>
+    </div>
+
+    <!-- ===================== SÉCULO XIX – POSITIVISMO E CRÍTICAS (EUROPA E AMÉRICAS) ===================== -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Século XIX – Positivismo, Convencionalismo e a Crítica a Newton</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-microscope"></i><h3>Auguste Comte (1798-1857) - França</h3><p>Fundador do positivismo. A física deve se basear apenas em fatos observáveis e leis, abandonando causas últimas. Influenciou o empirismo lógico.</p></div>
+        <div class="card"><i class="fas fa-rocket"></i><h3>Ernst Mach (1838-1916) - Áustria</h3><p>Crítico ferrenho dos absolutos newtonianos (tempo, espaço, movimento). O princípio de Mach influenciou Einstein. Defendeu que conceitos devem ser operacionalmente definidos.</p></div>
+        <div class="card"><i class="fas fa-question-circle"></i><h3>Pierre Duhem (1861-1916) - França</h3><p>Tese de Duhem-Quine: uma hipótese científica não pode ser testada isoladamente, mas apenas em conjunto com todo um sistema de crenças. Fundamental para a filosofia da ciência.</p></div>
+        <div class="card"><i class="fas fa-chalkboard"></i><h3>Henri Poincaré (1854-1912) - França</h3><p>Convencionalismo: algumas proposições científicas são escolhas convenientes, não verdades necessárias (ex.: geometria euclidiana). Precursor da relatividade.</p></div>
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Charles Sanders Peirce (1839-1914) - EUA</h3><p>Pragmatismo, teoria da inferência abdutiva. Influenciou a filosofia da probabilidade e a mecânica quântica.</p></div>
+        <div class="card"><i class="fas fa-user-graduate"></i><h3>William James (1842-1910) - EUA</h3><p>Pragmatismo, empirismo radical. Suas ideias sobre a natureza da verdade e da experiência influenciaram a filosofia da ciência americana.</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>John Stuart Mill (1806-1873) - Inglaterra</h3><p>Empirismo, utilitarismo e lógica indutiva. Sua "A System of Logic" influenciou a filosofia da ciência do século XIX.</p></div>
+    </div>
+
+    <!-- PENSADORES AFRICANOS (PRÉ-COLONIAIS E MODERNOS) -->
+    <div class="section-title"><i class="fas fa-globe-africa"></i> Pensadores Africanos e Afrodescendentes</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-user-graduate"></i><h3>Anton Wilhelm Amo (1703-1759) - Gana/Alemanha</h3><p>Primeiro filósofo africano a ensinar em universidades alemãs. Escreveu sobre a filosofia da mente e a relação entre corpo e alma, influenciando a psicologia filosófica.</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Edward W. Blyden (1832-1912) - Libéria</h3><p>Pensador pan-africanista, discutiu a relação entre ciência, cultura e desenvolvimento africano.</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>Kwame Gyekye (1939-2019) - Gana</h3><p>Filósofo da ciência e da cultura, defendeu a integração do conhecimento científico ocidental com as tradições africanas.</p></div>
+        <div class="card"><i class="fas fa-female"></i><h3>Sophie Oluwole (1935-2018) - Nigéria</h3><p>Primeira mulher doutora em filosofia na Nigéria, estudou a filosofia iorubá e sua relação com a natureza e a ciência.</p></div>
+    </div>
+
+    <!-- ===================== SÉCULO XX – QUÂNTICA, RELATIVIDADE E FILOSOFIA DA CIÊNCIA (GLOBAL) ===================== -->
+    <div class="section-title"><i class="fas fa-atom"></i> Século XX – Revolução Quântica, Relatividade e a Crise do Realismo</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-brain"></i><h3>Albert Einstein (1879-1955) - Alemanha/Suíça/EUA</h3><p>Além da física, Einstein foi um filósofo profundo. Debates com Bohr sobre realismo e completude da mecânica quântica. Seu realismo científico influenciou a filosofia da física.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Niels Bohr (1885-1962) - Dinamarca</h3><p>Princípio da complementaridade: fenômenos quânticos podem ter descrições mutuamente exclusivas, mas ambas necessárias. Uma filosofia que rejeita o realismo ingênuo.</p></div>
+        <div class="card"><i class="fas fa-question-circle"></i><h3>Werner Heisenberg (1901-1976) - Alemanha</h3><p>Escreveu sobre a "imagem física do mundo" e a relação entre observador e realidade. Influenciado pelo idealismo alemão.</p></div>
+        <div class="card"><i class="fas fa-dna"></i><h3>Erwin Schrödinger (1887-1961) - Áustria/Irlanda</h3><p>"What is Life?" – filosofia da biologia e da física. Crítico da interpretação de Copenhague.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Hans Reichenbach (1891-1953) - Alemanha/EUA</h3><p>Positivismo lógico, filosofia do espaço-tempo (teoria da relatividade). Definição de "contexto de descoberta" e "contexto de justificação".</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Rudolf Carnap (1891-1970) - Alemanha/EUA</h3><p>Positivista lógico, tentou fundamentar a física em uma linguagem observacional pura. Crítico da metafísica.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Karl Popper (1902-1994) - Áustria/Reino Unido</h3><p>Critério de falseabilidade: uma teoria é científica se puder ser refutada por experimentos. Crítico do positivismo e defensor da abertura crítica.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Thomas Kuhn (1922-1996) - EUA</h3><p>"A Estrutura das Revoluções Científicas": paradigmas, ciência normal e revoluções. Mudou a compreensão de como a física avança — por rupturas, não por acúmulo linear.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Paul Feyerabend (1924-1994) - Áustria/EUA</h3><p>"Contra o Método": pluralismo metodológico, crítica ao racionalismo. Defendeu que a ciência não tem um método universal e que a anarquia epistemológica é produtiva.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Bas van Fraassen (n.1941) - Países Baixos/EUA</h3><p>Empirismo construtivo: a ciência visa teorias empiricamente adequadas, não necessariamente verdadeiras. Interpretação anti-realista da mecânica quântica.</p></div>
+        <div class="card"><i class="fas fa-female"></i><h3>Nancy Cartwright (n.1944) - Reino Unido/EUA</h3><p>"How the Laws of Physics Lie": as leis da física são idealizações, não descrições literais da realidade. Realismo sobre entidades, mas não sobre leis universais.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>David Z Albert (n.1954) - EUA</h3><p>Filósofo da mecânica quântica, da termodinâmica e do tempo. Autor de "Time and Chance".</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Tim Maudlin (n.1958) - EUA</h3><p>Especialista em fundamentos da mecânica quântica, teoria das variáveis ocultas (Bohm), realismo científico.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Carlo Rovelli (n.1956) - Itália</h3><p>Físico e filósofo (gravitação quântica de laços). Realismo relacional: o estado de um sistema é relativo ao observador. Autor de "A Ordem do Tempo".</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Christopher A. Fuchs (n.1964) - EUA</h3><p>Interpretação QBista da mecânica quântica: estados quânticos representam crenças subjetivas de um agente, não propriedades objetivas.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>David Wallace (n.1972) - Reino Unido/EUA</h3><p>Defensor da interpretação de "muitos mundos" de Everett. Escreve sobre filosofia da física, tempo e cosmologia.</p></div>
+    </div>
+
+    <!-- FILÓSOFOS DA AMÉRICA LATINA (SÉC. XX) -->
+    <div class="section-title"><i class="fas fa-globe-americas"></i> Pensadores Latino-Americanos da Física e Filosofia</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-church"></i><h3>Mário Schenberg (1914-1990) - Brasil</h3><p>Físico e filósofo da ciência, crítico de arte. Escreveu sobre a relação entre ciência, arte e política, além de contribuições à termodinâmica de buracos negros.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>José Leite Lopes (1918-2006) - Brasil</h3><p>Físico teórico e filósofo da ciência, defendeu a autonomia científica brasileira e criticou o positivismo ingênuo.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Mario Bunge (1919-2020) - Argentina/Canadá</h3><p>Filósofo da ciência (realismo científico, emergentismo). Criticou o positivismo e a pseudociência. Autor do monumental "Treatise on Basic Philosophy".</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Francisco Miró Quesada (1918-2019) - Peru</h3><p>Filósofo da ciência e lógico, propôs a filosofia da ciência latino-americana como uma tradição autônoma.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Enrique Dussel (1934-2023) - Argentina/México</h3><p>Filósofo da libertação, discutiu a epistemologia do Sul Global e a crítica à ciência eurocêntrica.</p></div>
+    </div>
+
+    <!-- FILÓSOFOS ASIÁTICOS (SÉC. XX) -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Pensadores Asiáticos da Física e Filosofia</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-church"></i><h3>Rabindranath Tagore (1861-1941) - Índia</h3><p>Poeta e filósofo, dialogou com Einstein sobre a natureza da realidade e a relação entre ciência e espiritualidade.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Abdus Salam (1926-1996) - Paquistão</h3><p>Nobel de Física, também filósofo da ciência islâmica, defendendo a integração entre ciência e fé.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Takeuchi Yoshinori (1913-2002) - Japão</h3><p>Filósofo da ciência japonês, discutiu a relação entre a física quântica e o pensamento oriental (budismo zen).</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Bimal Krishna Matilal (1935-1991) - Índia</h3><p>Filósofo da lógica e da epistemologia indiana, comparou o atomismo indiano (Vaisheshika) com a física ocidental.</p></div>
+    </div>
+
+    <!-- FILÓSOFOS OCEANIANOS -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Pensadores da Oceania</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-church"></i><h3>John Eccles (1903-1997) - Austrália</h3><p>Neurocientista e filósofo da mente, discutiu a relação entre cérebro e consciência, dialogando com físicos como Popper.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>David Stove (1927-1994) - Austrália</h3><p>Filósofo da ciência, crítico do relativismo e do positivismo.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Peter Forrest (n.1946) - Austrália</h3><p>Filósofo da física, especialista em filosofia do espaço-tempo e da religião.</p></div>
+    </div>
+
+    <!-- Questões Abertas na Filosofia da Física -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-question"></i> Questões Abertas na Filosofia da Física</div>
+        <ul style="margin-left: 2rem;">
+            <li><strong>Realismo vs. antirrealismo:</strong> As entidades quânticas existem independentemente da medição? Os elétrons são reais ou apenas constructos úteis?</li>
+            <li><strong>Interpretação da mecânica quântica:</strong> Copenhague, Everett (muitos mundos), Bohm, QBismo, decoerência – qual delas descreve corretamente a realidade?</li>
+            <li><strong>Natureza do tempo:</strong> O tempo é fundamental (Newton) ou emergente (Rovelli)? O presente é objetivo?</li>
+            <li><strong>Realidade da energia escura e matéria escura:</strong> São entidades reais ou modificações das leis da gravitação?</li>
+            <li><strong>Unificação da relatividade geral e mecânica quântica:</strong> Qual é a natureza do espaço-tempo na escala de Planck? O que é uma teoria de gravitação quântica?</li>
+            <li><strong>Princípio antrópico:</strong> O universo é "ajustado" para a vida? Isso tem significado científico ou filosófico?</li>
+            <li><strong>O multiverso é ciência ou metafísica?</strong> Pode-se testar a existência de outros universos?</li>
+        </ul>
+        <div class="motivacional">
+            <i class="fas fa-lightbulb"></i> A filosofia não morreu com o avanço da ciência. Ao contrário, ela nunca foi tão necessária para interpretar teorias contraintuitivas e para orientar a própria investigação científica.
+        </div>
+    </div>
+
+    <!-- Síntese dos pensadores (cronológica e geográfica) -->
+    <div class="section-title"><i class="fas fa-list"></i> Síntese dos Pensadores (Cronológica e por Região)</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-book"></i><h3>Antiguidade</h3><p>Tales, Demócrito, Platão, Aristóteles, Filopono</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Medieval</h3><p>Tomás de Aquino, Nicolau de Cusa, Alhazen, Mulla Sadra</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Renascimento/Iluminismo (Europa)</h3><p>Bacon, Descartes, Pascal, Spinoza, Leibniz, Berkeley, Hume, Kant</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Américas (colonial)</h3><p>Vieira, Sigüenza y Góngora, Espejo, Mutis</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>África</h3><p>Anton Wilhelm Amo, Blyden, Gyekye, Oluwole</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Ásia (pré-moderno)</h3><p>Wang Fuzhi, Hayashi Razan, Alhazen, Mulla Sadra</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Século XIX</h3><p>Comte, Mach, Duhem, Poincaré, Peirce, James, Mill</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Século XX-XXI (Europa/América Norte)</h3><p>Einstein, Bohr, Heisenberg, Schrödinger, Reichenbach, Carnap, Popper, Kuhn, Feyerabend, van Fraassen, Cartwright, Albert, Maudlin, Rovelli, Fuchs, Wallace</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>América Latina (séc. XX)</h3><p>Schenberg, Leite Lopes, Bunge, Miró Quesada, Dussel</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Ásia (séc. XX-XXI)</h3><p>Tagore, Abdus Salam, Takeuchi, Matilal</p></div>
+        <div class="card"><i class="fas fa-book"></i><h3>Oceania</h3><p>Eccles, Stove, Forrest</p></div>
+    </div>
+
+    <!-- Conclusão -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-quote-left"></i> Conclusão: A Física sem Filosofia é Cega, a Filosofia sem Física é Vazia</div>
+        <p>A filosofia não é um adorno para a física; é sua consciência crítica. Sem ela, a física seria um conjunto de fórmulas desprovidas de significado. Os grandes debates sobre realismo, determinismo, causalidade, tempo, espaço e sentido da existência não podem ser resolvidos apenas com experimentos. A física moderna, especialmente a quântica e a cosmologia, trouxe de volta questões que há muito pertenciam à filosofia. Hoje, mais do que nunca, físicos e filósofos caminham juntos na busca pela compreensão da realidade — e essa busca é global, com contribuições de todos os continentes. O legado dos pensadores aqui listados é a certeza de que toda grande teoria física começa com uma pergunta filosófica.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “A ciência sem a filosofia é manca. A filosofia sem a ciência é vazia.” — Adaptado de Albert Einstein <i class="fas fa-quote-right"></i>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="17.Regioes.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar: Física nas Regiões</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+    </div>
+
+    <footer>
+        <i class="fas fa-book-open"></i> A filosofia da física é a ponte entre o mundo das ideias e o mundo das partículas. Honrar esses pensadores de todas as regiões é reconhecer que a física é, acima de tudo, um esforço humano coletivo de dar sentido ao universo.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

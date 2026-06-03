@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Jornada da Física – Conhecimento Humano e Saberes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef7ec;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #fff5e6, #fae2c0);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.4rem;
+            color: #2c3e2f;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .badge {
+            background: #c4a35a;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0 1.5rem;
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+            border-left: 6px solid #b16224;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .grid-saberes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .saber-card {
+            background: #fefaf2;
+            border-radius: 28px;
+            padding: 1.2rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border: 1px solid #f0e0ca;
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .saber-card i {
+            font-size: 2.4rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+            transition: transform 0.2s;
+        }
+
+        .saber-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .saber-card p {
+            font-size: 0.9rem;
+            color: #4a5b5e;
+            transition: color 0.2s;
+        }
+
+        .saber-card .detalhe {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.2s;
+            background: #f9f0e2;
+            border-radius: 20px;
+            margin-top: 0;
+            padding: 0 0.8rem;
+            font-size: 0.8rem;
+            color: #3a4a3a;
+            text-align: left;
+        }
+
+        .saber-card:hover {
+            background: #f5e9d9;
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 18px 30px -10px rgba(0,0,0,0.15);
+            border-color: #c4a35a;
+        }
+
+        .saber-card:hover i {
+            transform: scale(1.05);
+            color: #914f1f;
+        }
+
+        .saber-card:hover .detalhe {
+            max-height: 180px;
+            opacity: 1;
+            padding: 0.6rem 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .timeline-periodos {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 0.8rem 0.2rem;
+            scrollbar-width: thin;
+        }
+
+        .timeline-item {
+            background: white;
+            min-width: 160px;
+            border-radius: 60px;
+            text-align: center;
+            padding: 0.8rem;
+            font-weight: bold;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: 1px solid #d9bf91;
+        }
+
+        .timeline-item:hover {
+            background: #c4a35a;
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .timeline-item i {
+            font-size: 1.4rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .periodo-detail {
+            margin: 2rem 0 1rem;
+            background: #fff9ef;
+            border-radius: 32px;
+            padding: 1rem;
+            animation: fadeSlide 0.5s ease;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateX(-20px);}
+            to { opacity: 1; transform: translateX(0);}
+        }
+
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.6rem;
+            margin: 2rem 0;
+        }
+
+        .link-card {
+            background: #fffbf5;
+            border-radius: 36px;
+            padding: 1.4rem;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .link-card:hover {
+            transform: translateY(-8px);
+            background: #ffffff;
+            border-color: #c4a35a;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15);
+        }
+
+        .link-card i {
+            font-size: 2rem;
+            color: #b16224;
+            margin-bottom: 0.6rem;
+        }
+
+        .badge-age {
+            background: #ecd9b4;
+            border-radius: 60px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
+            .saber-card:hover .detalhe { max-height: 250px; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Hero animado -->
+    <div class="hero">
+        <div class="badge"><i class="fas fa-globe-americas"></i> Conhecimento sem fronteiras</div>
+        <h1><i class="fas fa-atom"></i> A Jornada da Física</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">Dos primeiros artefatos lascados às ondas gravitacionais,<br> a física é a busca incessante por descrever os fenômenos da natureza com linguagem matemática e experimento.</p>
+        <i class="fas fa-arrow-down" style="font-size: 2rem; animation: bounce 2s infinite; display: inline-block; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Mensagem motivadora inicial -->
+    <div class="motivacional">
+        <i class="fas fa-quote-left"></i> A ciência não é apenas um conjunto de fórmulas — é a chama da curiosidade que ilumina o caminho humano. Cada descoberta começa com uma pergunta e a coragem de não se contentar com respostas fáceis. <i class="fas fa-quote-right"></i>
+    </div>
+
+    <!-- O QUE É FÍSICA? – Interdisciplinaridade expandida -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-question-circle"></i> O que é Física?</div>
+        <p style="font-size: 1.05rem; margin-bottom: 1rem;">A física é a ciência fundamental que estuda a matéria, a energia, o espaço e o tempo, e as interações entre eles. Ela não existe isoladamente: <strong>seus alicerces e avanços dependem de outros campos do saber humano</strong>. Abaixo, uma visão ampliada — passe o mouse sobre cada área para ver detalhes adicionais.</p>
+        <div class="grid-saberes">
+            <!-- Matemática -->
+            <div class="saber-card"><i class="fas fa-calculator"></i><h3>Matemática</h3><p>Linguagem das leis físicas: equações diferenciais, geometria, álgebra linear.</p><div class="detalhe">A matemática fornece a estrutura lógica e as ferramentas (cálculo tensorial, grupos de simetria) para formular teorias como a relatividade geral e a mecânica quântica.</div></div>
+            <!-- Filosofia -->
+            <div class="saber-card"><i class="fas fa-brain"></i><h3>Filosofia</h3><p>Fundamentos: natureza do tempo, causalidade, interpretações da mecânica quântica.</p><div class="detalhe">Debates sobre realismo, instrumentismo, determinismo e o papel do observador moldaram a física desde os pré-socráticos até os dias atuais (ex: problema da medição).</div></div>
+            <!-- Química -->
+            <div class="saber-card"><i class="fas fa-flask"></i><h3>Química</h3><p>Estrutura da matéria, ligações, termodinâmica – física atômica e molecular.</p><div class="detalhe">A física quântica explica a tabela periódica, as reações químicas e a espectroscopia. A físico-química une termodinâmica e cinética.</div></div>
+            <!-- Biologia -->
+            <div class="saber-card"><i class="fas fa-dna"></i><h3>Biologia</h3><p>Biofísica, mecanismos moleculares, forças em seres vivos.</p><div class="detalhe">Desde a difusão em membranas até a visão e o voo dos animais, a física descreve processos vitais. Neurofísica e biologia quântica são fronteiras atuais.</div></div>
+            <!-- Sociologia -->
+            <div class="saber-card"><i class="fas fa-chart-line"></i><h3>Sociologia da Ciência</h3><p>Como o conhecimento científico se organiza, paradigmas e revoluções (Kuhn).</p><div class="detalhe">Analisa a influência de fatores sociais, econômicos e culturais na produção científica, incluindo a formação de comunidades e redes de colaboração global.</div></div>
+            <!-- Geografia -->
+            <div class="saber-card"><i class="fas fa-map-marked-alt"></i><h3>Geografia</h3><p>Geofísica, climatologia, cartografia do espaço físico.</p><div class="detalhe">O estudo da Terra como sistema: campo gravitacional, magnetismo terrestre, dinâmica dos oceanos e atmosfera – todas aplicações diretas da física.</div></div>
+            <!-- História -->
+            <div class="saber-card"><i class="fas fa-history"></i><h3>História</h3><p>Evolução das ideias, contexto cultural das descobertas.</p><div class="detalhe">Entender o desenvolvimento histórico da física permite reconhecer rupturas, continuidades e o papel de civilizações frequentemente negligenciadas (China, Índia, mundo islâmico).</div></div>
+            <!-- Astronomia & Cosmologia – ícone corrigido para luneta -->
+            <div class="saber-card"><i class="fas fa-telescope"></i><h3>Astronomia & Cosmologia</h3><p>Física aplicada ao cosmos: buracos negros, expansão do universo.</p><div class="detalhe">A astrofísica e a cosmologia usam leis físicas (gravitação, termodinâmica, física nuclear) para explicar a origem, evolução e destino do universo.</div></div>
+            <!-- Aeronáutica -->
+            <div class="saber-card"><i class="fas fa-rocket"></i><h3>Aeronáutica</h3><p>Mecânica dos fluidos, propulsão, dinâmica de voo – física aplicada.</p><div class="detalhe">A aerodinâmica, os motores a jato e o controle de veículos aeroespaciais são realizações da física newtoniana e da termodinâmica.</div></div>
+            <!-- Biotecnologia -->
+            <div class="saber-card"><i class="fas fa-dna"></i><h3>Biotecnologia</h3><p>Aplicações da física em engenharia genética e biomoléculas.</p><div class="detalhe">Técnicas como sequenciamento de DNA (microfluídica, óptica), biossensores e terapia gênica dependem de princípios físicos de interação radiação-matéria e transporte em nanoescala.</div></div>
+            <!-- Logística -->
+            <div class="saber-card"><i class="fas fa-truck"></i><h3>Logística</h3><p>Otimização de fluxos, teoria das filas, redes.</p><div class="detalhe">A física estatística e a teoria do caos contribuem para modelos de distribuição, tráfego e cadeias de suprimentos, melhorando a eficiência global.</div></div>
+            <!-- Ciência da Computação -->
+            <div class="saber-card"><i class="fas fa-laptop-code"></i><h3>Ciência da Computação</h3><p>Computação quântica, algoritmos, simulação física.</p><div class="detalhe">A física fornece o hardware (transistores, lasers) e a computação quântica promete resolver problemas intratáveis classicamente; por outro lado, a computação permite simular fenômenos complexos.</div></div>
+            <!-- Engenharia de Materiais -->
+            <div class="saber-card"><i class="fas fa-cubes"></i><h3>Engenharia de Materiais</h3><p>Propriedades mecânicas, elétricas e magnéticas.</p><div class="detalhe">A física do estado sólido e da matéria condensada é a base para o desenvolvimento de semicondutores, polímeros condutores, grafeno e metamateriais.</div></div>
+            <!-- Psicologia Cognitiva -->
+            <div class="saber-card"><i class="fas fa-eye"></i><h3>Psicologia Cognitiva</h3><p>Percepção, atenção, tomada de decisão.</p><div class="detalhe">A psicofísica e a neurociência aplicam métodos da física (detecção de sinais, processamento de imagens) para entender a mente humana e interfaces cérebro-máquina.</div></div>
+            <!-- Economia -->
+            <div class="saber-card"><i class="fas fa-chart-line"></i><h3>Economia</h3><p>Modelagem de sistemas complexos, teoria dos jogos.</p><div class="detalhe">A econofísica utiliza mecânica estatística para analisar mercados financeiros, distribuição de riquezas e comportamento de agentes econômicos.</div></div>
+            <!-- Ecologia -->
+            <div class="saber-card"><i class="fas fa-leaf"></i><h3>Ecologia</h3><p>Fluxo de energia, ciclos biogeoquímicos.</p><div class="detalhe">A termodinâmica e a hidrodinâmica explicam o balanço energético dos ecossistemas, as correntes oceânicas e o transporte de poluentes.</div></div>
+            <!-- Robótica -->
+            <div class="saber-card"><i class="fas fa-robot"></i><h3>Robótica</h3><p>Cinemática, controle, sensores e atuadores.</p><div class="detalhe">A física clássica (mecânica, eletromagnetismo, óptica) é essencial para projetar robôs autônomos, drones e sistemas de navegação.</div></div>
+            <!-- Nanotecnologia -->
+            <div class="saber-card"><i class="fas fa-microchip"></i><h3>Nanotecnologia</h3><p>Manipulação em escala atômica, efeitos quânticos.</p><div class="detalhe">A física de superfícies, microscopia de tunelamento e pontos quânticos permitem criar materiais com propriedades radicalmente novas.</div></div>
+            <!-- Construção / Engenharia Civil -->
+            <div class="saber-card"><i class="fas fa-hard-hat"></i><h3>Construção (Engenharia Civil)</h3><p>Estática, resistência dos materiais, mecânica das estruturas.</p><div class="detalhe">Os princípios físicos de equilíbrio de forças, elasticidade e dinâmica são essenciais para pontes, arranha-céus e barragens. A física dos solos e a acústica arquitetônica também derivam da física clássica.</div></div>
+            <!-- Geologia -->
+            <div class="saber-card"><i class="fas fa-mountain"></i><h3>Geologia</h3><p>Tectônica de placas, sismologia, dinâmica da Terra.</p><div class="detalhe">A física explica o movimento das placas litosféricas (convecção do manto), a propagação de ondas sísmicas e o campo magnético terrestre (dínamo geodinâmico).</div></div>
+            <!-- Meteorologia -->
+            <div class="saber-card"><i class="fas fa-cloud-sun-rain"></i><h3>Meteorologia</h3><p>Termodinâmica atmosférica, fluidodinâmica, previsão do tempo.</p><div class="detalhe">A meteorologia aplica as leis da física dos fluidos e da radiação para modelar ciclones, frentes frias e mudanças climáticas globais.</div></div>
+            <!-- Design Industrial -->
+            <div class="saber-card"><i class="fas fa-couch"></i><h3>Design Industrial</h3><p>Ergonomia, materiais, interação homem-máquina.</p><div class="detalhe">O design de produtos utiliza conhecimentos de mecânica (resistência, fadiga), acústica e termodinâmica para criar objetos seguros, funcionais e estéticos.</div></div>
+            <!-- Ciência de Dados -->
+            <div class="saber-card"><i class="fas fa-database"></i><h3>Ciência de Dados</h3><p>Análise estatística, aprendizado de máquina, mineração de dados.</p><div class="detalhe">A física estatística fornece fundamentos para inferência de padrões em grandes volumes de dados, e métodos de Monte Carlo são amplamente usados tanto em física quanto em data science.</div></div>
+            <!-- Sustentabilidade -->
+            <div class="saber-card"><i class="fas fa-solar-panel"></i><h3>Sustentabilidade</h3><p>Eficiência energética, energias renováveis, armazenamento de energia.</p><div class="detalhe">A termodinâmica, a eletroquímica (baterias) e a física de semicondutores (células fotovoltaicas) são fundamentais para transição energética e mitigação das mudanças climáticas.</div></div>
+        </div>
+        <p><strong>Progresso humano:</strong> A física evolui do saber empírico (pré-história) para a filosofia natural (Antiguidade), depois para a experimentação sistemática (Renascença) e atinge as revoluções conceituais (relatividade, quântica). Cada salto dependeu de avanços matemáticos, instrumentais e até de reorganizações socioculturais.</p>
+        <div class="motivacional" style="margin-top: 1rem;">
+            <i class="fas fa-lightbulb"></i> "Nós, humanos, somos feitos da mesma matéria das estrelas. Estudar física é, em última análise, estudar a nós mesmos e o nosso lugar no cosmos." — Carl Sagan (inspiração)
+        </div>
+    </div>
+
+    <!-- LINHA DO TEMPO ANIMADA (expandida) -->
+    <div class="timeline-periodos">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-chart-simple"></i> Linha do tempo histórica</div>
+        <div class="timeline-scroll" id="timelineScroll">
+            <div class="timeline-item" data-periodo="paleo"><i class="fas fa-fire"></i> Paleolítico</div>
+            <div class="timeline-item" data-periodo="neol"><i class="fas fa-seedling"></i> Neolítico</div>
+            <div class="timeline-item" data-periodo="metais"><i class="fas fa-hammer"></i> Idade dos Metais</div>
+            <div class="timeline-item" data-periodo="antiga"><i class="fas fa-landmark"></i> Idade Antiga</div>
+            <div class="timeline-item" data-periodo="alta"><i class="fas fa-church"></i> Alta Idade Média (V-X)</div>
+            <div class="timeline-item" data-periodo="baixa"><i class="fas fa-university"></i> Baixa Idade Média (XI-XV)</div>
+            <div class="timeline-item" data-periodo="moderna"><i class="fas fa-globe"></i> Idade Moderna</div>
+            <div class="timeline-item" data-periodo="contemporanea"><i class="fas fa-microchip"></i> Idade Contemporânea</div>
+            <div class="timeline-item" data-periodo="atomica"><i class="fas fa-radiation"></i> Idade Atômica (1945-1970)</div>
+            <div class="timeline-item" data-periodo="espacial"><i class="fas fa-rocket"></i> Idade Espacial (1957-2000)</div>
+            <div class="timeline-item" data-periodo="digital"><i class="fas fa-laptop"></i> Idade Digital (1970-2000)</div>
+            <div class="timeline-item" data-periodo="quanti"><i class="fas fa-atom"></i> Idade Quântica-Informacional</div>
+            <div class="timeline-item" data-periodo="planetaria"><i class="fas fa-globe"></i> Idade Planetária</div>
+            <div class="timeline-item" data-periodo="cosmica"><i class="fas fa-star-of-life"></i> Idade Cósmica</div>
+        </div>
+        <div id="descricaoPeriodo" class="periodo-detail">
+            <strong><i class="fas fa-info-circle"></i> Clique em qualquer período</strong> – Veja o resumo do progresso científico e os saberes desenvolvidos.
+        </div>
+    </div>
+
+    <!-- SEÇÃO DINÂMICAS REGIONAIS -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-globe-asia"></i> Dinâmicas regionais e o poder da integração</div>
+        <p>Os conhecimentos físicos não surgiram no mesmo ritmo em todas as partes do mundo. Cada civilização, em seu contexto geográfico e cultural, amadureceu saberes específicos:</p>
+        <ul style="margin: 1rem 0 1rem 2rem;">
+            <li><i class="fas fa-water" style="color:#b16224;"></i> <strong>Mesopotâmia e Egito:</strong> astronomia empírica, calendários, geometria aplicada à engenharia.</li>
+            <li><i class="fas fa-mountain" style="color:#b16224;"></i> <strong>Grécia e Helenismo:</strong> sistematização lógica, filosofia natural, primeiros modelos matemáticos do cosmos.</li>
+            <li><i class="fas fa-yin-yang" style="color:#b16224;"></i> <strong>Índia e China:</strong> avanços em matemática (zero, sistema decimal), observação detalhada de astros, metalurgia e acústica.</li>
+            <li><i class="fas fa-mosque" style="color:#b16224;"></i> <strong>Mundo islâmico medieval:</strong> preservação e expansão da ciência grega, método experimental em óptica, álgebra.</li>
+            <li><i class="fas fa-feather-alt" style="color:#b16224;"></i> <strong>Europa ocidental:</strong> desenvolvimento das universidades, escolástica, e posterior revolução científica.</li>
+            <li><i class="fas fa-chart-line" style="color:#b16224;"></i> <strong>Américas pré-colombianas:</strong> sofisticados sistemas calendáricos, observatórios incas e maias, sem o uso da roda.</li>
+        </ul>
+        <p><strong>A integração humana – através de rotas comerciais, traduções, intercâmbios culturais e migrações – foi o grande motor de aceleração do progresso.</strong> O conhecimento sobre a pólvora, o papel, a bússola (China) chegou à Europa; a álgebra e os algarismos arábicos (Índia/Mundo islâmico) transformaram a matemática; a filosofia grega, preservada pelos árabes, reencontrou o Ocidente nas universidades medievais.</p>
+        <div class="motivacional" style="margin-top: 1rem;">
+            <i class="fas fa-handshake"></i> "A ciência não tem pátria, porque o conhecimento pertence à humanidade." — Louis Pasteur
+        </div>
+    </div>
+
+    <!-- MAPA COMPLETO DOS ARQUIVOS (Navegue pela jornada completa) – com novos links de 09 a 18 -->
+    <div class="section-title"><i class="fas fa-folder-open"></i> Navegue pela jornada completa</div>
+    <div class="grid-links">
+        <a href="01.fis.pale.html" class="link-card"><i class="fas fa-fire"></i><h3>01. Paleolítico</h3><p>Saberes anônimos: fogo, ferramentas, astronomia rudimentar.</p><span class="badge-age">~2,5 mi - 10.000 a.C.</span></a>
+        <a href="02.fis.neol.html" class="link-card"><i class="fas fa-seedling"></i><h3>02. Neolítico</h3><p>Revolução agrícola, monumentos megalíticos, roda.</p><span class="badge-age">~10.000 - 4.000 a.C.</span></a>
+        <a href="03.fis.meta.html" class="link-card"><i class="fas fa-chalkboard"></i><h3>03. Idade dos Metais</h3><p>Metalurgia, calendários, engenharia e navegação.</p><span class="badge-age">~4.000 - 500 a.C.</span></a>
+        <a href="04.fis.anti.html" class="link-card"><i class="fas fa-landmark"></i><h3>04. Idade Antiga</h3><p>Filósofos naturais, atomismo, astronomia global.</p><span class="badge-age">~3.500 a.C. - 476 d.C.</span></a>
+        <a href="05.fis.meda.html" class="link-card"><i class="fas fa-church"></i><h3>05. Alta Idade Média</h3><p>Preservação, mundo islâmico, Casa da Sabedoria.</p><span class="badge-age">séc. V – X</span></a>
+        <a href="06.fis.medb.html" class="link-card"><i class="fas fa-university"></i><h3>06. Baixa Idade Média</h3><p>Universidades, Grosseteste, Roger Bacon, ímpeto.</p><span class="badge-age">séc. XI – XV</span></a>
+        <a href="07.fis.mode.html" class="link-card"><i class="fas fa-globe"></i><h3>07. Idade Moderna</h3><p>Copérnico, Galileu, Kepler, Newton – revolução científica.</p><span class="badge-age">1453 - 1789</span></a>
+        <a href="09.fis.cont.html" class="link-card"><i class="fas fa-microchip"></i><h3>09. Contemporânea (até 1945)</h3><p>Eletromagnetismo, relatividade, quântica inicial.</p><span class="badge-age">1789 - 1945</span></a>
+        <a href="10.fis.atom.html" class="link-card"><i class="fas fa-radiation"></i><h3>10. Idade Atômica (1945-1970)</h3><p>Bomba atômica, energia nuclear, física de partículas.</p><span class="badge-age">1945-1970</span></a>
+        <a href="11.fis.espa.html" class="link-card"><i class="fas fa-rocket"></i><h3>11. Idade Espacial (1957-2000)</h3><p>Sputnik, corrida espacial, astrofísica moderna.</p><span class="badge-age">1957-2000</span></a>
+        <a href="12.fis.digi.html" class="link-card"><i class="fas fa-laptop"></i><h3>12. Idade Digital (1970-2000)</h3><p>Computadores, simulações, física computacional.</p><span class="badge-age">1970-2000</span></a>
+        <a href="13.fis.quin.html" class="link-card"><i class="fas fa-atom"></i><h3>13. Quântica-Informacional</h3><p>Computação quântica, teletransporte, criptografia.</p><span class="badge-age">2000-2050</span></a>
+        <a href="14.fis.plan.html" class="link-card"><i class="fas fa-globe"></i><h3>14. Idade Planetária</h3><p>Sobrevivência global, energia sustentável, clima.</p><span class="badge-age">2050-2100 (esp)</span></a>
+        <a href="15.fis.cosm.html" class="link-card"><i class="fas fa-star-of-life"></i><h3>15. Idade Cósmica</h3><p>Colonização espacial, matéria escura, multiverso.</p><span class="badge-age">2100+ (esp)</span></a>
+        <a href="16.nobel.html" class="link-card"><i class="fas fa-trophy"></i><h3>16. Prêmios Nobel</h3><p>Física, Química, Medicina, Economia (1901-2025).</p></a>
+        <a href="17.Regioes.html" class="link-card"><i class="fas fa-globe-americas"></i><h3>17. Física no Mundo</h3><p>Representatividade regional e grupos marginalizados.</p></a>
+        <a href="18.Filo.html" class="link-card"><i class="fas fa-brain"></i><h3>18. Filosofia da Física</h3><p>Pensadores que moldaram a interpretação da física.</p></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Todos os períodos, todas as culturas, mulheres e grupos historicamente marginalizados.<br>
+        Conteúdo sistematizado com base em pesquisas históricas, filosóficas e científicas. A integração entre civilizações sempre foi o motor do avanço.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+
+<script>
+    const periodosInfo = {
+        paleo: "🔹 <strong>Paleolítico (até ~10.000 a.C.):</strong> Conhecimentos empíricos anônimos: domínio do fogo, ferramentas de percussão, alavancas, astronomia rudimentar (fases da Lua). Física como saber prático, transmitido oralmente.",
+        neol: "🔹 <strong>Neolítico (~10.000 - 4.000 a.C.):</strong> Sedentarização, agricultura, monumentos megalíticos (Stonehenge, Newgrange). Compreensão de fricção, roda, eixo e termologia da cerâmica.",
+        metais: "🔹 <strong>Idade dos Metais (~4.000 a.C. - 500 a.C.):</strong> Metalurgia do cobre, bronze, ferro. Calendários astronômicos (mesopotâmicos, egípcios, olmecas). Geometria aplicada e hidráulica.",
+        antiga: "🔹 <strong>Idade Antiga (c. 3.500 a.C. - 476 d.C.):</strong> Nascimento da filosofia natural (Tales, Aristóteles). Atomismo (Leucipo, Demócrito). Grandes obras: Almagesto de Ptolomeu, Elementos de Euclides, astronomia chinesa e indiana.",
+        alta: "🔹 <strong>Alta Idade Média (séc. V – X):</strong> Preservação do conhecimento em mosteiros e na Casa da Sabedoria (Bagdá). Traduções de gregos, avanços em óptica (Alhazen) e álgebra (Al-Khwarizmi).",
+        baixa: "🔹 <strong>Baixa Idade Média (séc. XI – XV):</strong> Universidades, método experimental (Grosseteste, Roger Bacon). Teoria do ímpeto (Buridan, Oresme). Contribuições à dinâmica e ao magnetismo.",
+        moderna: "🔹 <strong>Idade Moderna (1453 – 1789):</strong> Revolução científica: heliocentrismo, leis de Kepler, Galileu e o método experimental, Newton (gravitação e mecânica clássica).",
+        contemporanea: "🔹 <strong>Idade Contemporânea (1789 – 1945):</strong> Eletromagnetismo (Faraday, Maxwell), termodinâmica, relatividade (Einstein), mecânica quântica (Bohr, Heisenberg, Dirac). Até o fim da Segunda Guerra.",
+        atomica: "🔹 <strong>Idade Atômica (1945–1970):</strong> Início com a bomba atômica e energia nuclear. Física de partículas, reatores, aplicações médicas da radiação. Desenvolvimento de aceleradores.",
+        espacial: "🔹 <strong>Idade Espacial (1957–2000):</strong> Sputnik, corrida espacial. Astrofísica moderna, exploração planetária, cosmologia observacional (radiação cósmica de fundo).",
+        digital: "🔹 <strong>Idade Digital (1970–2000):</strong> Computadores e simulações físicas. Física computacional, modelagem de sistemas complexos, internet, sensoriamento remoto.",
+        quanti: "🔹 <strong>Idade Quântica-Informacional (2000–2050):</strong> Computação quântica, criptografia quântica, teletransporte. Física da informação como novo paradigma.",
+        planetaria: "🔹 <strong>Idade Planetária (2050–2100, especulativa):</strong> Física aplicada à sobrevivência global: clima, fusão nuclear, geoengenharia, recursos sustentáveis.",
+        cosmica: "🔹 <strong>Idade Cósmica (2100 em diante, especulativa):</strong> Colonização espacial, física interestelar. Teorias sobre matéria escura, energia escura e multiverso."
+    };
+    const items = document.querySelectorAll('.timeline-item');
+    const descDiv = document.getElementById('descricaoPeriodo');
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const periodo = item.getAttribute('data-periodo');
+            if(periodosInfo[periodo]) {
+                descDiv.innerHTML = periodosInfo[periodo];
+                descDiv.style.animation = 'none';
+                setTimeout(() => descDiv.style.animation = 'fadeSlide 0.5s ease', 10);
+            } else {
+                descDiv.innerHTML = "<strong><i class='fas fa-info-circle'></i> Selecione um período para ver a descrição detalhada.</strong>";
+            }
+        });
+    });
+</script>
+</body>
+</html>

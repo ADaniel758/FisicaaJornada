@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Idade Antiga – O Nascimento da Filosofia Natural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #2c3e2f, #5a4e3b);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: #fef0d9;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-events {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            min-width: 180px;
+            background: white;
+            border-radius: 40px;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+        .region-tag {
+            font-weight: bold;
+            color: #b16224;
+            margin-top: 0.3rem;
+            display: inline-block;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-atom"></i> O Despertar da Razão</div>
+        <h1><i class="fas fa-landmark"></i> Idade Antiga <br> A Física se Torna Filosofia Natural</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">c. 3.500 a.C. – 476 d.C. —<br> Dos primeiros sábios anônimos da Mesopotâmia e Egito aos gênios gregos, indianos, chineses e pré-colombianos: a física se desprende do mito e busca as causas primeiras na própria natureza.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Contexto e progresso -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-chart-line"></i> O Nascimento da Filosofia Natural</div>
+        <p>A Idade Antiga testemunhou a transição do saber prático e anônimo (acumulado durante milênios) para um conhecimento <strong>reflexivo e sistematizado</strong>. Pela primeira vez, pensadores individuais formularam explicações racionais sobre a origem do cosmos, a natureza da matéria e as causas do movimento. O termo "física" deriva do grego <em>physis</em> (natureza), e os primeiros filósofos naturais perguntaram: <strong>qual é a substância primordial (arché) de todas as coisas?</strong> As respostas variaram da água (Tales) aos átomos (Demócrito), do ar (Anaxímenes) ao apeiron (Anaximandro).</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “Todas as coisas estão cheias de deuses” – Tales de Mileto. Com essa frase, ele inaugurou a busca por princípios racionais no universo, abrindo caminho para a ciência. <i class="fas fa-quote-right"></i>
+        </div>
+        <p><strong>Progresso dos saberes:</strong> A Idade Antiga consolidou a <strong>matemática como linguagem da natureza</strong> (Pitágoras, Euclides), desenvolveu a <strong>lógica e o método dialético</strong> (Sócrates, Platão, Aristóteles), criou o <strong>atomismo</strong> (Leucipo, Demócrito) e produziu modelos cosmológicos (Ptolomeu, Aristarco). Na engenharia, Arquimedes lançou as bases da hidrostática e da estática. Paralelamente, na Índia, China e Américas, floresceram astronomia, matemática e sistemas de calendário de extraordinária precisão, muitas vezes superando os gregos em observação empírica.</p>
+    </div>
+
+    <!-- Linha do tempo dos principais eventos da Idade Antiga -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Linha do Tempo da Antiguidade Científica</div>
+    <div class="timeline-events">
+        <div class="timeline-marker"><i class="fas fa-pyramid"></i> c. 2650 a.C.<br>Imhotep (pirâmide degraus)</div>
+        <div class="timeline-marker"><i class="fas fa-chalkboard"></i> c. 600 a.C.<br>Tales (água como arché)</div>
+        <div class="timeline-marker"><i class="fas fa-atom"></i> c. 460 a.C.<br>Demócrito (atomismo)</div>
+        <div class="timeline-marker"><i class="fas fa-chart-line"></i> c. 350 a.C.<br>Aristóteles, Física</div>
+        <div class="timeline-marker"><i class="fas fa-ruler"></i> c. 300 a.C.<br>Euclides, Elementos</div>
+        <div class="timeline-marker"><i class="fas fa-water"></i> c. 250 a.C.<br>Arquimedes (hidrostática)</div>
+        <div class="timeline-marker"><i class="fas fa-sun"></i> c. 240 a.C.<br>Eratóstenes (circunferência)</div>
+        <div class="timeline-marker"><i class="fas fa-globe"></i> c. 150 a.C.<br>Hiparco (precessão)</div>
+        <div class="timeline-marker"><i class="fas fa-calculator"></i> c. 500 d.C.<br>Aryabhata (rotação Terra)</div>
+    </div>
+
+    <!-- Pré-requisitos: Mesopotâmia e Egito -->
+    <div class="section-title"><i class="fas fa-scroll"></i> Os Precursores: Mesopotâmia e Egito</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-star-of-life"></i><h3>Mesopotâmia (Sumérios, Babilônios)</h3><p>Astronomia sistemática: divisão do céu em 360°, calendários lunisolares, ciclo de Saros (eclipses), previsão de planetas. Nomes: <strong>Kidinnu</strong> (ano solar), <strong>Beroso</strong>, <strong>Seleuco de Selêucia</strong> (heliocentrista). Matemática sexagesimal, tabelas de multiplicação e raízes.</p></div>
+        <div class="card"><i class="fas fa-ankh"></i><h3>Egito</h3><p>Geometria aplicada (pirâmides, agrimensura), calendário solar de 365 dias (baseado em Sothis). Nomes: <strong>Imhotep</strong> (arquiteto), <strong>Ptahhotep</strong> (sábio), <strong>Merit Ptah</strong> (primeira mulher cientista registrada).</p></div>
+    </div>
+
+    <!-- A Grécia: berço da filosofia natural (várias escolas) -->
+    <div class="section-title"><i class="fas fa-olive-branch"></i> O "Milagre Grego" – Filosofia Natural</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-water"></i><h3>Escola Jônica (Mileto)</h3><p><strong>Tales</strong> (água, eclipse), <strong>Anaximandro</strong> (ápeiron, evolução), <strong>Anaxímenes</strong> (ar). Primeiros a buscar o princípio material do cosmos.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Escola Pitagórica</h3><p><strong>Pitágoras</strong> (números como essência, harmonia das esferas), <strong>Filolau</strong> (fogo central), <strong>Arquitas</strong> (matemática aplicada à mecânica).</p></div>
+        <div class="card"><i class="fas fa-infinity"></i><h3>Escola Eleática</h3><p><strong>Parmênides</strong> (Ser uno e imóvel), <strong>Zenão</strong> (paradoxos do movimento). Desafiaram a noção de mudança.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Pluralistas e Atomistas</h3><p><strong>Empédocles</strong> (quatro elementos), <strong>Anaxágoras</strong> (nous, homeomerias), <strong>Leucipo</strong> e <strong>Demócrito</strong> (átomos e vazio).</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>Sócrates, Platão, Aristóteles</h3><p><strong>Sócrates</strong> (método dialético), <strong>Platão</strong> (Timeu, sólidos platônicos), <strong>Aristóteles</strong> (Física qualitativa, geocentrismo, lógica, biologia). O sistema aristotélico dominou por 2.000 anos.</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>Período Helenístico</h3><p><strong>Euclides</strong> (geometria), <strong>Arquimedes</strong> (alavanca, hidrostática, parafuso), <strong>Aristarco</strong> (heliocentrismo), <strong>Eratóstenes</strong> (circunferência da Terra), <strong>Hiparco</strong> (precessão, trigonometria), <strong>Heron</strong> (pneumática, eolípila), <strong>Ptolomeu</strong> (Almagesto, modelo geocêntrico).</p></div>
+    </div>
+
+    <!-- Outras civilizações: Índia, China e as Américas (com ícones específicos) -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Além da Grécia: Índia, China e as Américas</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-om"></i><h3>Índia Antiga</h3><p><strong>Kanada</strong> (atomismo Vaisheshika, c. 600 a.C.). <strong>Aryabhata</strong> (476–550): rotação da Terra, modelo heliocêntrico, cálculo de π. <strong>Brahmagupta</strong> (zero, números negativos). <strong>Varāhamihira</strong> (enciclopédia astronômica).</p></div>
+        
+        <div class="card"><i class="fas fa-dragon"></i><h3>China Antiga</h3><p><strong>Shi Shen</strong> e <strong>Gan De</strong> (séc. IV a.C.): catálogo estelar de 800 estrelas, primeira menção a manchas solares. <strong>Zhang Heng</strong> (78–139): esfera armilar hidráulica, primeiro sismógrafo. Também se destacaram na metalurgia do bronze e na acústica (sinos).</p></div>
+        
+        <div class="card"><i class="fas fa-mountain"></i><h3>Américas Pré-Colombianas</h3><p><strong>Maias</strong> (c. 250–900): ciclos da Lua e Vênus com precisão extraordinária, previsão de eclipses, calendário Tzolk'in de 260 dias. <strong>Incas</strong> (Intihuatana, observatórios de solstícios). <strong>Astecas</strong> (calendário solar complexo). Tudo sem o uso da roda ou instrumentos ópticos.</p></div>
+    </div>
+
+    <!-- Seção sobre o atomismo e a física qualitativa -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-microscope"></i> O Legado Filosófico e Científico</div>
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fill, minmax(260px,1fr));">
+            <div class="card"><i class="fas fa-cube"></i><h3>Atomismo</h3><p>Leucipo e Demócrito propuseram que a realidade é composta por átomos indivisíveis e vazio. Essa intuição seria redescoberta na química moderna e confirmada experimentalmente séculos depois.</p></div>
+            <div class="card"><i class="fas fa-chalkboard-teacher"></i><h3>Método Científico Emergente</h3><p>Aristóteles sistematizou a lógica e a observação, mas foi na Escola de Alexandria (Heron, Arquimedes) que a experimentação começou a ser usada para testar hipóteses.</p></div>
+            <div class="card"><i class="fas fa-globe"></i><h3>Cosmologia Quantitativa</h3><p>Eratóstenes mediu a circunferência da Terra com erro inferior a 2%. Aristarco propôs o heliocentrismo 1.800 anos antes de Copérnico.</p></div>
+        </div>
+        <p>O fim da Idade Antiga (queda do Império Romano do Ocidente, 476 d.C.) não interrompeu o desenvolvimento científico: os saberes gregos foram preservados no mundo islâmico e em Bizâncio, sendo mais tarde transmitidos à Europa medieval, onde germinariam na Renascença.</p>
+    </div>
+
+    <!-- Mensagem motivadora final sobre a globalidade do conhecimento -->
+    <div class="motivacional">
+        <i class="fas fa-globe-americas"></i> <strong>Uma teia global de saber</strong> – Da Mesopotâmia à Grécia, da Índia à China e às Américas, a Antiguidade demonstrou que o conhecimento científico é universal. Tales, Aryabhata, Zhang Heng e os astrônomos maias beberam de fontes diferentes, mas todos buscaram o mesmo: compreender o cosmos.
+    </div>
+
+    <!-- Navegação entre períodos -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="03.fis.meta.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar: Idade dos Metais</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+        <a href="05.fis.meda.html" class="btn-voltar">Próximo: Alta Idade Média <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Idade Antiga: quando o mito cedeu lugar à razão e o cosmos começou a ser decifrado.<br>
+        De Tales a Ptolomeu, de Aryabhata a Zhang Heng, dos maias aos incas – a física nasceu da coragem de perguntar “por quê?”.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

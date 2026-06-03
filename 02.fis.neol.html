@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 Neolítico – A Revolução Silenciosa da Física Prática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #3b5e3b, #6b8c42);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: #fef0d9;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-events {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            min-width: 180px;
+            background: white;
+            border-radius: 40px;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+        .badge-age {
+            background: #ecd9b4;
+            border-radius: 60px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-seedling"></i> Revolução Agrícola e Saberes Coletivos</div>
+        <h1><i class="fas fa-landmark"></i> Neolítico <br> A Física da Sedentarização</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">~10.000 – 4.000 a.C. —<br> Os primeiros arquitetos, astrônomos e engenheiros anônimos. Monumentos megalíticos, roda, cerâmica e o domínio da agricultura.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Contexto e progresso humano -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-chart-line"></i> A Revolução Silenciosa do Conhecimento</div>
+        <p>O Neolítico (Idade da Pedra Polida) representa uma das maiores transformações da história humana: a passagem da caça-coleta para a agricultura e a sedentarização. Grupos humanos deixaram o nomadismo, construíram as primeiras aldeias, domesticaram animais e criaram tecnologias que exigiam compreensão prática de fenômenos físicos: <strong>fricção, alavancagem, pressão hidráulica, resistência de materiais, termologia e astronomia</strong>. Embora não existam nomes individuais registrados (o conhecimento era coletivo e transmitido oralmente), os monumentos e artefatos que sobreviveram testemunham uma sofisticação científica impressionante.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> Sem uma equação escrita, mas com a precisão de quem observava o céu e a terra, os neolíticos ergueram templos solares e dominaram o fogo para criar a cerâmica. Foram os primeiros "cientistas aplicados" da história. <i class="fas fa-quote-right"></i>
+        </div>
+        <p><strong>Progresso dos saberes:</strong> A agricultura exigiu medição do tempo (calendários) e controle da água (hidráulica). A arquitetura megalítica demandou noções de estática, atrito e geometria. A roda e o eixo reduziram o atrito, revolucionando o transporte. A cerâmica implicou controle de temperaturas e transformações físico-químicas. Cada avanço pavimentou o caminho para as civilizações da Idade do Bronze e da História.</p>
+    </div>
+
+    <!-- Linha do tempo dos marcos neolíticos -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Marcos da Física no Neolítico</div>
+    <div class="timeline-events">
+        <div class="timeline-marker"><i class="fas fa-tractor"></i> 10.000 a.C.<br>Agricultura e irrigação</div>
+        <div class="timeline-marker"><i class="fas fa-couch"></i> 8.000 a.C.<br>Cerâmica cozida</div>
+        <div class="timeline-marker"><i class="fas fa-wheelchair"></i> 6.000 a.C.<br>Roda e eixo (Mesopotâmia)</div>
+        <div class="timeline-marker"><i class="fas fa-draw-polygon"></i> 5.000 a.C.<br>Monumentos megalíticos</div>
+        <div class="timeline-marker"><i class="fas fa-sun"></i> 4.000 a.C.<br>Stonehenge (início)</div>
+        <div class="timeline-marker"><i class="fas fa-globe"></i> 3.500 a.C.<br>Nabta Playa (calendário)</div>
+    </div>
+
+    <!-- Tabela de conhecimentos transformada em cards por região -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Conhecimentos Anônimos por Região</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-sun"></i><h3>Astronomia e Calendário</h3><p><strong>Stonehenge (Inglaterra):</strong> alinhamento com os solstícios de verão e inverno. <strong>Newgrange (Irlanda):</strong> túmulo iluminado pelo sol do solstício de inverno. <strong>Nabta Playa (Egito):</strong> alinhamento de pedras com estrelas e cometas – um dos primeiros observatórios astronômicos.</p><span class="badge-age">~5.000 – 3.000 a.C.</span></div>
+        <div class="card"><i class="fas fa-draw-polygon"></i><h3>Engenharia e Arquitetura</h3><p><strong>Dolmen de Menga (Espanha):</strong> câmara funerária com blocos de até 150 toneladas – uso de fricção, ângulos, planos inclinados e geometria. <strong>Círculos de pedra:</strong> unidades de medida padronizadas.</p><span class="badge-age">~3.800 a.C.</span></div>
+        <div class="card"><i class="fas fa-water"></i><h3>Agricultura e Hidráulica</h3><p>Crescente Fértil e Europa: canais de irrigação, barragens, controle de pressão da água. Compreensão dos ciclos anuais (ligados à astronomia) para plantio e colheita.</p><span class="badge-age">~10.000 a.C.</span></div>
+        <div class="card"><i class="fas fa-thermometer-half"></i><h3>Cerâmica e Termologia</h3><p>Irã, Azerbaijão, Europa: controle do fogo para cozer argila a temperaturas >800°C. Transformação física e química do barro em cerâmica impermeável.</p><span class="badge-age">~8.000 a.C.</span></div>
+        <div class="card"><i class="fas fa-truck"></i><h3>Transporte e Mecânica</h3><p>Trenós para reduzir atrito no arraste de blocos. <strong>Roda e eixo</strong> (Mesopotâmia, ~6.000 a.C.): revolução no transporte, na cerâmica (torno de oleiro) e na moagem.</p><span class="badge-age">~6.000 a.C.</span></div>
+    </div>
+
+    <!-- Seção aprofundada: Física aplicada em cada tecnologia -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-microscope"></i> A Física Prática dos Megalitos e da Roda</div>
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fill, minmax(260px,1fr));">
+            <div class="card"><i class="fas fa-chart-line"></i><h3>Estática e Alavancas</h3><p>Para erguer monólitos, usavam alavancas, rampas e roldanas rudimentares. A distribuição de peso e o centro de massa eram compreendidos empiricamente.</p></div>
+            <div class="card"><i class="fas fa-hand-peace"></i><h3>Fricção</h3><p>Trenós lubrificados (água, argila) reduziam o atrito. A roda e eixo transformaram o atrito cinético em rolamento, muito mais eficiente.</p></div>
+            <div class="card"><i class="fas fa-chalkboard"></i><h3>Geometria e Medição</h3><p>Círculos de pedra com unidades padronizadas (por exemplo, o "pé megalítico" de 0,83 m). Conhecimento de círculos, ângulos retos e simetrias.</p></div>
+            <div class="card"><i class="fas fa-water"></i><h3>Hidrostática</h3><p>Canais e barragens: controle da pressão da água, uso de comportas e níveis para irrigação.</p></div>
+        </div>
+        <p>Esses conhecimentos não estavam escritos, mas estavam <strong>encarnados nas obras</strong>. Quem construiu Stonehenge dominava a matemática e a astronomia sem precisar de notação algébrica. A roda, um dos maiores inventos de todos os tempos, exigiu compreensão de atrito, simetria circular e resistência de materiais. O Neolítico é a prova de que a física pode existir como <strong>saber técnico e artesanal</strong> antes de se tornar teoria.</p>
+    </div>
+
+    <!-- Destaque para o legado anônimo e evolução -->
+    <div class="motivacional">
+        <i class="fas fa-users"></i> <strong>Arquitetos sem nome, astrônomos sem telescópio</strong> — O Neolítico nos legou as primeiras estruturas que ainda hoje nos conectam com o cosmos. Cada pedra erguida foi uma lição de física aplicada.
+    </div>
+
+    <!-- Comparação com o Paleolítico e transição -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-exchange-alt"></i> Do Paleolítico ao Neolítico: a aceleração do conhecimento</div>
+        <p>Enquanto o Paleolítico dominou o <strong>fogo, a pedra lascada e a energia elástica</strong>, o Neolítico deu um salto qualitativo: a <strong>agricultura</strong> exigiu planejamento e medição do tempo; a <strong>cerâmica</strong> demandou controle térmico; a <strong>roda</strong> e os <strong>megalitos</strong> exigiram geometria e estática. Esse acúmulo de saberes práticos permitiu o surgimento das primeiras civilizações (Egito, Mesopotâmia, Vale do Indo). A física, ainda não separada da técnica, tornou-se a base da engenharia humana.</p>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="01.fis.pale.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar ao Paleolítico</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+        <a href="03.fis.meta.html" class="btn-voltar">Próximo: Idade dos Metais <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Neolítico: quando a humanidade domesticou plantas, animais e a própria física.<br>
+        Todos os conhecimentos aqui descritos são anônimos, fruto de uma inteligência coletiva que construiu os alicerces da civilização.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

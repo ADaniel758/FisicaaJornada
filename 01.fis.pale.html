@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Paleolítico – A Física dos Primeiros Humanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #2c3e2f, #4a6b4a);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: #fef0d9;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-events {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            min-width: 180px;
+            background: white;
+            border-radius: 40px;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Hero -->
+    <div class="hero">
+        <div class="badge"><i class="fas fa-fire"></i> Saberes Anônimos · Base de Toda a Física</div>
+        <h1><i class="fas fa-meteor"></i> Paleolítico <br> A Física dos Primeiros Humanos</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">De ~2,5 milhões de anos atrás até ~10.000 a.C. —<br> Conhecimentos empíricos, práticos e anônimos que forjaram a inteligência humana.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Explicação inicial: O que foi o Paleolítico e o progresso humano -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-globe-africa"></i> O Amanhecer do Conhecimento</div>
+        <p>O Paleolítico, ou Idade da Pedra Lascada, abrange mais de 99% da história humana. Nesse período, nossos ancestrais — do <strong>Homo habilis</strong> ao <strong>Homo sapiens</strong> — desenvolveram a capacidade de transformar a natureza por meio de técnicas empíricas. <strong>Não existem nomes individuais registrados</strong>: todo conhecimento era coletivo, transmitido oralmente e por imitação. Contudo, esses saberes constituem a base empírica sobre a qual toda a física posterior se ergueu.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> O domínio do fogo, a lasca da pedra, o arco que voa — cada gesto era um experimento, cada sucesso uma lei física descoberta sem fórmula. A física começou não nos livros, mas nas mãos calejadas de quem sobreviveu. <i class="fas fa-quote-right"></i>
+        </div>
+        <p><strong>Progresso dos saberes:</strong> Iniciamos com a percepção do fogo e das propriedades da pedra (mecânica elementar). Aos poucos, aprendemos a controlar reações exotérmicas, a armazenar energia potencial (arco), a prever ciclos lunares e a manipular a flutuação. Cada descoberta ampliou a capacidade de adaptação e abriu caminho para a agricultura (Neolítico) e, mais tarde, para a ciência sistemática.</p>
+    </div>
+
+    <!-- Linha do tempo visual dos marcos paleolíticos -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Marcos da Física no Paleolítico</div>
+    <div class="timeline-events">
+        <div class="timeline-marker"><i class="fas fa-hand-rock"></i> 2,5 Ma<br>Ferramentas lascadas</div>
+        <div class="timeline-marker"><i class="fas fa-fire"></i> 1,5 Ma<br>Domínio do fogo</div>
+        <div class="timeline-marker"><i class="fas fa-couch"></i> 200 ka<br>Alavancas e planos</div>
+        <div class="timeline-marker"><i class="fas fa-moon"></i> 100 ka<br>Astronomia rudimentar</div>
+        <div class="timeline-marker"><i class="fas fa-bow-arrow"></i> 70 ka<br>Arco e flecha</div>
+        <div class="timeline-marker"><i class="fas fa-ship"></i> 50 ka<br>Embarcações</div>
+        <div class="timeline-marker"><i class="fas fa-music"></i> 40 ka<br>Flautas (acústica)</div>
+        <div class="timeline-marker"><i class="fas fa-magnet"></i> 30 ka<br>Magnetita</div>
+    </div>
+
+    <!-- Lista detalhada dos 8 conhecimentos (cards animados) -->
+    <div class="section-title"><i class="fas fa-lightbulb"></i> Os Oito Pilares da Física Paleolítica</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-fire"></i><h3>1. Domínio do fogo</h3><p>Transformação de energia química (combustão) em térmica e luminosa. Primeira reação exotérmica controlada pelo homem (Homo erectus). Uso para aquecimento, cozimento e proteção.</p><span class="badge-age">~1,5 milhão anos</span></div>
+        <div class="card"><i class="fas fa-hammer"></i><h3>2. Ferramentas de pedra lascada</h3><p>Técnica de percussão: ângulo de impacto e fratura controlada (mecânica elementar). As lascas cortantes revolucionaram a caça e o processamento de alimentos.</p><span class="badge-age">Olduvaiense, ~2,5 Ma</span></div>
+        <div class="card"><i class="fas fa-long-arrow-alt-up"></i><h3>3. Alavancas e planos inclinados</h3><p>Uso de galhos para mover pedras ou caçar (alavancas). Rampas naturais para transportar cargas. Princípio da vantagem mecânica empírica.</p><span class="badge-age">~200.000 anos</span></div>
+        <div class="card"><i class="fas fa-moon"></i><h3>4. Astronomia rudimentar</h3><p>Registro das fases da Lua, posição do Sol e estações. O osso de Ishango (~20.000 a.C.) é um dos primeiros artefatos de contagem de ciclos lunares.</p><span class="badge-age">a partir de ~100 ka</span></div>
+        <div class="card"><i class="fas fa-bow-arrow"></i><h3>5. Projéteis e arco e flecha</h3><p>Atlatl (propulsor de dardos) e arco: transformação de energia potencial elástica em cinética. Um dos primeiros dispositivos de armazenamento de energia.</p><span class="badge-age">~70.000 – 60.000 anos (África)</span></div>
+        <div class="card"><i class="fas fa-ship"></i><h3>6. Embarcações rudimentares</h3><p>Jangadas e troncos escavados: princípios hidrostáticos empíricos (flutuação, empuxo, deslocamento). Colonização de ilhas no Sudeste Asiático e Oceania.</p><span class="badge-age">~50.000 anos</span></div>
+        <div class="card"><i class="fas fa-magnet"></i><h3>7. Magnetismo (magnetita)</h3><p>Uso simbólico ou ritual da magnetita (ímã natural). Possível orientação, mas sem evidência de navegação magnética sistemática.</p><span class="badge-age">~30.000 – 10.000 a.C.</span></div>
+        <div class="card"><i class="fas fa-music"></i><h3>8. Acústica primitiva</h3><p>Flautas de osso (Divje Babe, Alemanha). Relação entre comprimento do tubo e altura do som; percepção de ressonância e timbre.</p><span class="badge-age">~40.000 a.C. (Paleolítico Superior)</span></div>
+    </div>
+
+    <!-- Seção: Como esses conhecimentos evoluíram e se conectam -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-brain"></i> A Física como Saber Tácito e Coletivo</div>
+        <p>No Paleolítico, não havia laboratórios, equações ou publicações. O conhecimento era transmitido pela <strong>ação direta</strong>: um jovem aprendia a lascar a pedra observando os mais velhos; a melhor forma de atirar uma lança era testada na caça; o fogo era mantido e reproduzido por imitação. Apesar disso, os princípios subjacentes — energia, movimento, forças, ondas — já eram manipulados com eficácia.</p>
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fill, minmax(240px,1fr));">
+            <div class="card"><i class="fas fa-charging-station"></i><h3>Energia</h3><p>Fogo (química → térmica), arco (elástica → cinética).</p></div>
+            <div class="card"><i class="fas fa-arrows-alt"></i><h3>Movimento</h3><p>Projéteis, alavancas, deslocamento em barcos.</p></div>
+            <div class="card"><i class="fas fa-waveform"></i><h3>Ondas</h3><p>Som em flautas, ressonância, timbre.</p></div>
+            <div class="card"><i class="fas fa-percent"></i><h3>Probabilidade e ciclos</h3><p>Observação de fases da Lua, previsão sazonal.</p></div>
+        </div>
+        <p>Esses saberes empíricos são a <strong>matriz de toda a física posterior</strong>. Sem a intuição da alavanca, Arquimedes não teria formulado seu princípio; sem o arco e flecha, a noção de energia potencial armazenada talvez demorasse mais a emergir. O Paleolítico é a <strong>pré-história da física</strong>, onde o método científico ainda não era consciente, mas a experimentação já era uma prática de sobrevivência.</p>
+    </div>
+
+    <!-- Mensagem motivadora sobre o legado anônimo -->
+    <div class="motivacional">
+        <i class="fas fa-users"></i> <strong>Heróis sem nome</strong> — Cada lasca lascada, cada fogo aceso, cada arco encurvado foi uma semente da ciência. A humanidade deve sua existência e sua inteligência a esses gênios anônimos do Paleolítico.
+    </div>
+
+    <!-- Links de navegação (voltar ao índice e prosseguir para o próximo período) -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="index.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar ao Índice</a>
+        <a href="02.fis.neol.html" class="btn-voltar">Próximo: Neolítico <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Paleolítico: a física antes da escrita.<br>
+        Todos os conhecimentos aqui descritos são anônimos, coletivos e transmitidos oralmente. A base empírica de toda a ciência futura.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

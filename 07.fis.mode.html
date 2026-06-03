@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔭 Idade Moderna – A Revolução Científica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #2a4b6b, #3a6b8b);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: #fef0d9;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-events {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            min-width: 180px;
+            background: white;
+            border-radius: 40px;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-telescope"></i> O Nascimento da Ciência Moderna</div>
+        <h1><i class="fas fa-globe"></i> Idade Moderna <br> A Revolução Científica (1453 – 1789)</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">Heliocentrismo, método experimental, leis da mecânica e gravitação universal — a física se torna quantitativa, matemática e preditiva.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Contexto e progresso -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-chart-line"></i> A Transformação da Visão de Mundo</div>
+        <p>A Idade Moderna (1453–1789) testemunhou uma das maiores revoluções intelectuais da história: a passagem de uma visão de mundo baseada na autoridade (Aristóteles, Bíblia) e na qualidade para uma abordagem fundamentada na <strong>observação empírica, na experimentação controlada e na descrição matemática dos fenômenos</strong>. O sistema geocêntrico ptolomaico foi substituído pelo <strong>heliocentrismo</strong> (Copérnico, Galileu, Kepler). O método experimental, defendido por Francis Bacon e praticado por Galileu, tornou-se o padrão para investigar a natureza. No final do período, <strong>Isaac Newton</strong> sintetizou a mecânica celeste e terrestre em suas <em>Philosophiæ Naturalis Principia Mathematica</em> (1687), estabelecendo as bases da física clássica.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “A Natureza está escrita em linguagem matemática.” — Galileu Galilei <i class="fas fa-quote-right"></i>
+        </div>
+        <p><strong>Progresso dos saberes:</strong> A Idade Moderna assistiu ao desenvolvimento do cálculo diferencial e integral (Newton, Leibniz), à formulação das leis do movimento planetário (Kepler), à descoberta das leis da queda dos corpos e do movimento pendular (Galileu), à invenção de instrumentos como o telescópio e o microscópio, à consolidação da óptica ondulatória (Huygens), ao estudo do vácuo (Torricelli, Pascal) e do magnetismo (Gilbert). Paralelamente, na Ásia e nas Américas, observou-se a continuidade das tradições astronômicas e matemáticas, com contribuições como o temperamento igual de Zhu Zaiyu (China) e os calendários de Shibukawa Harumi (Japão).</p>
+    </div>
+
+    <!-- Linha do tempo da Revolução Científica -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Cronologia da Revolução (1453–1789)</div>
+    <div class="timeline-events">
+        <div class="timeline-marker"><i class="fas fa-sun"></i> 1543<br>Copérnico (heliocentrismo)</div>
+        <div class="timeline-marker"><i class="fas fa-chart-simple"></i> 1609-1619<br>Kepler (3 leis)</div>
+        <div class="timeline-marker"><i class="fas fa-telescope"></i> 1610<br>Galileu (telescópio)</div>
+        <div class="timeline-marker"><i class="fas fa-flask"></i> 1620<br>Bacon (método)</div>
+        <div class="timeline-marker"><i class="fas fa-lightbulb"></i> 1638<br>Galileu (Duas Novas Ciências)</div>
+        <div class="timeline-marker"><i class="fas fa-water"></i> 1643<br>Torricelli (barômetro)</div>
+        <div class="timeline-marker"><i class="fas fa-church"></i> 1665-1666<br>Newton (anos miraculoso)</div>
+        <div class="timeline-marker"><i class="fas fa-book"></i> 1687<br>Principia (gravitação)</div>
+        <div class="timeline-marker"><i class="fas fa-chart-line"></i> 1690<br>Huygens (luz)</div>
+    </div>
+
+    <!-- Os Arquitetos da Nova Física -->
+    <div class="section-title"><i class="fas fa-users"></i> Os Arquitetos da Física Moderna</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-sun"></i><h3>Nicolau Copérnico (1473-1543)</h3><p>Polonês. Formulou a teoria heliocêntrica, com o Sol no centro do sistema solar, revolucionando a astronomia.</p></div>
+        <div class="card"><i class="fas fa-star-of-life"></i><h3>Tycho Brahe (1546-1601)</h3><p>Dinamarquês. Compilou observações astronômicas precisíssimas, essenciais para as leis de Kepler.</p></div>
+        <div class="card"><i class="fas fa-telescope"></i><h3>Galileu Galilei (1564-1642)</h3><p>Italiano. Pai da ciência moderna. Lei da queda dos corpos, inércia, pêndulo, e uso do telescópio para observar luas de Júpiter e fases de Vênus.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Johannes Kepler (1571-1630)</h3><p>Alemão. Leis do movimento planetário: órbitas elípticas, lei das áreas, e relação entre período e distância.</p></div>
+        <div class="card"><i class="fas fa-magnet"></i><h3>William Gilbert (1544-1603)</h3><p>Inglês. Estudos sobre magnetismo, concluiu que a Terra é um grande ímã.</p></div>
+        <div class="card"><i class="fas fa-chalkboard"></i><h3>Francis Bacon (1561-1626)</h3><p>Inglês. Ideólogo do método indutivo e experimental, enfatizou a observação como base do conhecimento.</p></div>
+        <div class="card"><i class="fas fa-brain"></i><h3>René Descartes (1596-1650)</h3><p>Francês. Filosofia mecanicista, explicou fenômenos por corpúsculos em movimento, criou a geometria analítica.</p></div>
+        <div class="card"><i class="fas fa-tachometer-alt"></i><h3>Evangelista Torricelli (1608-1647)</h3><p>Italiano. Inventou o barômetro de mercúrio, provou a existência do vácuo.</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>Blaise Pascal (1623-1662)</h3><p>Francês. Princípio de Pascal (pressão em fluidos), experimentos com barômetros no Puy-de-Dôme.</p></div>
+        <div class="card"><i class="fas fa-lightbulb"></i><h3>Christiaan Huygens (1629-1695)</h3><p>Holandês. Teoria ondulatória da luz, princípio de Huygens, relógio de pêndulo.</p></div>
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Robert Hooke (1635-1703)</h3><p>Inglês. Lei da elasticidade (Hooke), contribuições à microscopia e gravitação.</p></div>
+        <div class="card"><i class="fas fa-apple-alt"></i><h3>Isaac Newton (1643-1727)</h3><p>Inglês. Leis do movimento, gravitação universal, cálculo diferencial, óptica (teoria corpuscular).</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Edmond Halley (1656-1742)</h3><p>Inglês. Calculou a órbita do cometa que leva seu nome, incentivou Newton a publicar o <em>Principia</em>.</p></div>
+    </div>
+
+    <!-- O Legado Global: Ásia e Américas -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> O Legado Global da Investigação da Natureza</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-china-railway"></i><h3>Zhu Zaiyu (China, 1536-1611)</h3><p>Príncipe da dinastia Ming. Aplicou matemática para aperfeiçoar o sistema musical, criando o temperamento igual – revolucionando a acústica e a teoria musical.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Nilakantha Somayaji (Índia, 1444-1545)</h3><p>Matemático e astrônomo da Escola do Kerala. Antecipou aspectos do modelo de Tycho Brahe e desenvolveu uma fórmula para a série do arco tangente.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Shibukawa Harumi (Japão, 1639-1715)</h3><p>Astrônomo do período Edo. Reformou o calendário japonês e observou trânsitos de Mercúrio.</p></div>
+        <div class="card"><i class="fas fa-calendar-alt"></i><h3>Takahashi Yoshitoki (Japão, 1764-1804)</h3><p>Astrônomo, desenvolveu o calendário Kansel e estudou métodos astronômicos ocidentais.</p></div>
+        <div class="card"><i class="fas fa-globe-americas"></i><h3>Carlos de Sigüenza y Góngora (México, 1645-1700)</h3><p>Primeiro cientista nativo da Nova Espanha. Trabalhos em astronomia, geografia e história.</p></div>
+        <div class="card"><i class="fas fa-mountain"></i><h3>José de Acosta (Espanha/Peru, 1540-1600)</h3><p>Jesuíta. Estudou fenômenos naturais, correntes oceânicas e a adaptação humana à altitude (mal de montanha).</p></div>
+    </div>
+
+    <!-- Síntese e legado -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-exchange-alt"></i> Da Filosofia Natural à Física Moderna</div>
+        <p>A Idade Moderna não apenas derrubou o geocentrismo, mas também estabeleceu os alicerces do pensamento científico contemporâneo: a crença de que o universo é governado por leis matemáticas universais, que podem ser descobertas pela experimentação e pela razão. A mecânica newtoniana, aperfeiçoada nos séculos seguintes (Lagrange, Laplace, Hamilton), dominaria a física até o advento da relatividade e da quântica. O método experimental e a colaboração entre cientistas (como na Royal Society) tornaram-se padrão. A Revolução Científica foi um evento global, ainda que centrado na Europa, com contribuições cruciais de estudiosos da China, Índia, Japão e América colonial.</p>
+        <div class="motivacional">
+            <i class="fas fa-lightbulb"></i> “Se vi mais longe, foi por estar sobre ombros de gigantes.” — Isaac Newton, homenageando Copérnico, Kepler, Galileu e tantos outros.
+        </div>
+    </div>
+
+    <!-- Navegação entre períodos -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="06.fis.medb.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar: Baixa Idade Média</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+        <a href="09.fis.cont.html" class="btn-voltar">Próximo: Idade Contemporânea <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Idade Moderna: quando a física abandonou a autoridade e abraçou a experimentação e a matemática.<br>
+        De Copérnico a Newton, de Galileu a Huygens, o universo tornou-se um mecanismo regido por leis.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

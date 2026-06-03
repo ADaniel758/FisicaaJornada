@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏅 Prêmios Nobel – Todas as Categorias (1901–2025)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #1a2a3a, #2a4a5a);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            color: #fef0d9;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+            color: #2d3e2b;
+        }
+
+        .descricao-premio {
+            background: #e8dcc8;
+            border-radius: 32px;
+            padding: 1rem 1.5rem;
+            margin: 0.5rem 0 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            border-left: 6px solid #b16224;
+        }
+
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+
+        .nobel-item {
+            background: #fffcf5;
+            border-radius: 28px;
+            padding: 0.6rem 1rem;
+            transition: all 0.2s ease;
+            border: 1px solid #f0e0ca;
+            font-size: 0.9rem;
+        }
+
+        .nobel-item:hover {
+            transform: translateX(6px);
+            background: #fff8ed;
+            border-color: #c4a35a;
+        }
+
+        .nobel-year {
+            font-weight: 800;
+            color: #b16224;
+            display: inline-block;
+            width: 65px;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
+            .grid-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-medal"></i> Excelência em Ciência, Literatura e Paz</div>
+        <h1><i class="fas fa-trophy"></i> Prêmios Nobel <br> Todas as Categorias (1901–2025)</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">Física, Química, Medicina, Economia, Literatura e Paz — as mentes e organizações que transformaram nossa compreensão do mundo e da humanidade.</p>
+        <i class="fas fa-arrow-down" style="font-size: 2rem; animation: bounce 2s infinite; display: inline-block;"></i>
+    </div>
+
+    <!-- História do Nobel -->
+    <div class="card-conceito" style="background: #ffffffdd; backdrop-filter: blur(4px); border-radius: 40px; padding: 1.8rem; margin-bottom: 2rem;">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-history"></i> A História do Prêmio Nobel</div>
+        <p>O Prêmio Nobel foi instituído pelo testamento de <strong>Alfred Nobel</strong> (1833–1896), inventor da dinamite, que destinou sua fortuna para premiar anualmente aqueles que, no ano anterior, tivessem conferido o maior benefício à humanidade. As áreas originais são: <strong>Física, Química, Fisiologia ou Medicina, Literatura e Paz</strong>. Em 1969, o Banco da Suécia criou o <strong>Prêmio de Ciências Econômicas em Memória de Alfred Nobel</strong>, ampliando o reconhecimento a contribuições na economia. Os prêmios são entregues em 10 de dezembro, aniversário da morte de Nobel.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “Para aqueles que, durante o ano anterior, tenham conferido o maior benefício à humanidade.” — Alfred Nobel <i class="fas fa-quote-right"></i>
+        </div>
+        <p>Até 2025, foram atribuídos mais de 600 prêmios a mais de 1000 pessoas e organizações. As listas abaixo apresentam todos os laureados nas seis categorias, em ordem cronológica, com destaques das descobertas e contribuições.</p>
+    </div>
+
+    <!-- ===================== FÍSICA ===================== -->
+    <div class="section-title"><i class="fas fa-atom"></i> 🏅 Prêmio Nobel de Física (1901–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-microscope"></i> <strong>Descrição e destaques:</strong> Reconhece descobertas fundamentais sobre o universo. Desde os raios X (Röntgen, 1901) até o entrelaçamento quântico (2022) e o tunelamento quântico macroscópico (2025). Grandes marcos incluem a relatividade (Einstein, 1921), a mecânica quântica (Heisenberg, Schrödinger, Dirac, 1932/33), a descoberta do núcleo atômico (Rutherford, 1908 - Química, mas físico), o transistor (1956), a supercondutividade (1972), as ondas gravitacionais (2017) e os buracos negros (2020).
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1901</span> Wilhelm Röntgen (Alemanha) – raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1902</span> H. Lorentz, P. Zeeman (Países Baixos) – efeito Zeeman</div>
+        <div class="nobel-item"><span class="nobel-year">1903</span> H. Becquerel, P. Curie, M. Curie (França) – radioatividade</div>
+        <div class="nobel-item"><span class="nobel-year">1904</span> Lord Rayleigh (Reino Unido) – densidade dos gases</div>
+        <div class="nobel-item"><span class="nobel-year">1905</span> P. von Lenard (Alemanha) – raios catódicos</div>
+        <div class="nobel-item"><span class="nobel-year">1906</span> J.J. Thomson (Reino Unido) – elétron</div>
+        <div class="nobel-item"><span class="nobel-year">1907</span> A. Michelson (EUA) – interferômetro</div>
+        <div class="nobel-item"><span class="nobel-year">1908</span> G. Lippmann (França) – fotografia a cores</div>
+        <div class="nobel-item"><span class="nobel-year">1909</span> G. Marconi (Itália), K. Braun (Alemanha) – telegrafia sem fio</div>
+        <div class="nobel-item"><span class="nobel-year">1910</span> J. van der Waals (Países Baixos) – equação de estado</div>
+        <div class="nobel-item"><span class="nobel-year">1911</span> W. Wien (Alemanha) – radiação térmica</div>
+        <div class="nobel-item"><span class="nobel-year">1912</span> N. Dalén (Suécia) – reguladores automáticos</div>
+        <div class="nobel-item"><span class="nobel-year">1913</span> H. Kamerlingh Onnes (Países Baixos) – supercondutividade</div>
+        <div class="nobel-item"><span class="nobel-year">1914</span> M. von Laue (Alemanha) – difração de raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1915</span> W.H. Bragg, W.L. Bragg (Reino Unido) – estrutura cristalina</div>
+        <div class="nobel-item"><span class="nobel-year">1917</span> C. Barkla (Reino Unido) – radiação de raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1918</span> M. Planck (Alemanha) – quantum de ação</div>
+        <div class="nobel-item"><span class="nobel-year">1919</span> J. Stark (Alemanha) – efeito Stark</div>
+        <div class="nobel-item"><span class="nobel-year">1920</span> C. Guillaume (Suíça) – ligas de níquel-aço</div>
+        <div class="nobel-item"><span class="nobel-year">1921</span> A. Einstein (Alemanha/Suíça/EUA) – efeito fotoelétrico</div>
+        <div class="nobel-item"><span class="nobel-year">1922</span> N. Bohr (Dinamarca) – estrutura atômica</div>
+        <div class="nobel-item"><span class="nobel-year">1923</span> R. Millikan (EUA) – carga do elétron</div>
+        <div class="nobel-item"><span class="nobel-year">1924</span> M. Siegbahn (Suécia) – espectroscopia de raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1925</span> J. Franck, G. Hertz (Alemanha) – impacto de elétrons</div>
+        <div class="nobel-item"><span class="nobel-year">1927</span> A. Compton (EUA), C. Wilson (Reino Unido) – efeito Compton e câmara de neblina</div>
+        <div class="nobel-item"><span class="nobel-year">1929</span> L. de Broglie (França) – dualidade onda-partícula</div>
+        <div class="nobel-item"><span class="nobel-year">1930</span> C.V. Raman (Índia) – espalhamento Raman</div>
+        <div class="nobel-item"><span class="nobel-year">1932</span> W. Heisenberg (Alemanha) – mecânica quântica</div>
+        <div class="nobel-item"><span class="nobel-year">1933</span> E. Schrödinger (Áustria), P. Dirac (Reino Unido) – equação de onda e antimatéria</div>
+        <div class="nobel-item"><span class="nobel-year">1935</span> J. Chadwick (Reino Unido) – nêutron</div>
+        <div class="nobel-item"><span class="nobel-year">1936</span> V. Hess (Áustria), C. Anderson (EUA) – raios cósmicos e pósitron</div>
+        <div class="nobel-item"><span class="nobel-year">1938</span> E. Fermi (Itália) – reações nucleares</div>
+        <div class="nobel-item"><span class="nobel-year">1939</span> E. Lawrence (EUA) – ciclotron</div>
+        <div class="nobel-item"><span class="nobel-year">1943</span> O. Stern (EUA) – feixe molecular</div>
+        <div class="nobel-item"><span class="nobel-year">1944</span> I. Rabi (EUA) – ressonância magnética</div>
+        <div class="nobel-item"><span class="nobel-year">1945</span> W. Pauli (Áustria) – princípio de exclusão</div>
+        <div class="nobel-item"><span class="nobel-year">1946</span> P. Bridgman (EUA) – altas pressões</div>
+        <div class="nobel-item"><span class="nobel-year">1947</span> E. Appleton (Reino Unido) – ionosfera</div>
+        <div class="nobel-item"><span class="nobel-year">1948</span> P. Blackett (Reino Unido) – câmara de neblina</div>
+        <div class="nobel-item"><span class="nobel-year">1949</span> H. Yukawa (Japão) – méson pi</div>
+        <div class="nobel-item"><span class="nobel-year">1950</span> C. Powell (Reino Unido) – emulsão nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1951</span> J. Cockcroft (Reino Unido), E. Walton (Irlanda) – desintegração artificial</div>
+        <div class="nobel-item"><span class="nobel-year">1952</span> F. Bloch, E. Purcell (EUA) – ressonância magnética nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1953</span> F. Zernike (Países Baixos) – contraste de fase</div>
+        <div class="nobel-item"><span class="nobel-year">1954</span> M. Born (Alemanha/Reino Unido), W. Bothe (Alemanha) – mecânica quântica e coincidências</div>
+        <div class="nobel-item"><span class="nobel-year">1955</span> W. Lamb, P. Kusch (EUA) – estrutura fina e momento magnético</div>
+        <div class="nobel-item"><span class="nobel-year">1956</span> W. Shockley, J. Bardeen, W. Brattain (EUA) – transistor</div>
+        <div class="nobel-item"><span class="nobel-year">1957</span> C.N. Yang, T.D. Lee (China/EUA) – violação da paridade</div>
+        <div class="nobel-item"><span class="nobel-year">1958</span> P. Cherenkov, I. Frank, I. Tamm (URSS) – radiação Cherenkov</div>
+        <div class="nobel-item"><span class="nobel-year">1959</span> E. Segrè, O. Chamberlain (EUA) – antipróton</div>
+        <div class="nobel-item"><span class="nobel-year">1960</span> D. Glaser (EUA) – câmara de bolhas</div>
+        <div class="nobel-item"><span class="nobel-year">1961</span> R. Hofstadter (EUA), R. Mössbauer (Alemanha) – estrutura nuclear e efeito Mössbauer</div>
+        <div class="nobel-item"><span class="nobel-year">1962</span> L. Landau (URSS) – superfluidez</div>
+        <div class="nobel-item"><span class="nobel-year">1963</span> E. Wigner, M. Goeppert-Mayer, J. Jensen (EUA/Alemanha) – simetria nuclear e camadas</div>
+        <div class="nobel-item"><span class="nobel-year">1964</span> C. Townes (EUA), N. Basov, A. Prokhorov (URSS) – maser e laser</div>
+        <div class="nobel-item"><span class="nobel-year">1965</span> S. Tomonaga (Japão), J. Schwinger, R. Feynman (EUA) – eletrodinâmica quântica</div>
+        <div class="nobel-item"><span class="nobel-year">1966</span> A. Kastler (França) – bombeamento óptico</div>
+        <div class="nobel-item"><span class="nobel-year">1967</span> H. Bethe (EUA) – nucleossíntese estelar</div>
+        <div class="nobel-item"><span class="nobel-year">1968</span> L. Alvarez (EUA) – câmara de bolhas de hidrogênio</div>
+        <div class="nobel-item"><span class="nobel-year">1969</span> M. Gell-Mann (EUA) – quarks</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> H. Alfvén (Suécia), L. Néel (França) – magnetohidrodinâmica e antiferromagnetismo</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> D. Gabor (Hungria/Reino Unido) – holografia</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> J. Bardeen, L. Cooper, R. Schrieffer (EUA) – teoria BCS da supercondutividade</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> L. Esaki (Japão), I. Giaever, B. Josephson (EUA/Reino Unido) – tunelamento quântico</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> M. Ryle, A. Hewish (Reino Unido) – radioastronomia e pulsares</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> A. Bohr, B. Mottelson, L. Rainwater (Dinamarca/EUA) – modelo coletivo nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> B. Richter, S. Ting (EUA) – charm quark</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> P. Anderson, N. Mott, J. van Vleck (EUA/Reino Unido) – desordem em sólidos</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> P. Kapitsa (URSS), A. Penzias, R. Wilson (EUA) – superfluidez e radiação cósmica de fundo</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> S. Glashow, A. Salam, S. Weinberg (EUA/Paquistão) – unificação eletrofraca</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> J. Cronin, V. Fitch (EUA) – violação de CP</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> N. Bloembergen, A. Schawlow (EUA), K. Siegbahn (Suécia) – espectroscopia a laser</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> K. Wilson (EUA) – transições de fase</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> S. Chandrasekhar, W. Fowler (EUA/Índia) – evolução estelar e nucleossíntese</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> C. Rubbia, S. van der Meer (Itália/Países Baixos) – bósons W e Z</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> K. von Klitzing (Alemanha) – efeito Hall quântico</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> E. Ruska, G. Binnig (Alemanha), H. Rohrer (Suíça) – microscopia eletrônica e de tunelamento</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> J. Bednorz, K. Müller (Alemanha/Suíça) – supercondutividade de alta temperatura</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> L. Lederman, M. Schwartz, J. Steinberger (EUA) – neutrino</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> N. Ramsey, H. Dehmelt (EUA), W. Paul (Alemanha) – ressonância magnética e aprisionamento iônico</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> J. Friedman, H. Kendall, R. Taylor (EUA/Canadá) – quarks</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> P. de Gennes (França) – polímeros e cristais líquidos</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> G. Charpak (França/Polónia) – detector proporcional multifios</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> R. Hulse, J. Taylor (EUA) – pulsares binários e relatividade geral</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> B. Brockhouse (Canadá), C. Shull (EUA) – espectroscopia de nêutrons</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> M. Perl, F. Reines (EUA) – tau e neutrino</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> D. Lee, D. Osheroff, R. Richardson (EUA) – superfluidez do hélio-3</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> S. Chu, C. Cohen-Tannoudji, W. Phillips (EUA/França) – resfriamento a laser</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> R. Laughlin, H. Störmer, D. Tsui (EUA/Alemanha) – efeito Hall quântico fracionário</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> G. 't Hooft, M. Veltman (Países Baixos) – renormalização</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> Z. Alferov, H. Kroemer, J. Kilby (Rússia/Alemanha/EUA) – semicondutores e circuito integrado</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> E. Cornell, W. Ketterle, C. Wieman (EUA/Alemanha) – condensado de Bose-Einstein</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> R. Davis, M. Koshiba, R. Giacconi (EUA/Japão) – neutrinos solares e astronomia de raios X</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> A. Abrikosov, V. Ginzburg, A. Leggett (Rússia/EUA/Reino Unido) – supercondutividade e superfluidez</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> D. Gross, D. Politzer, F. Wilczek (EUA) – liberdade assintótica</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> R. Glauber, J. Hall, T. Hänsch (EUA/Alemanha) – óptica quântica e espectroscopia</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> J. Mather, G. Smoot (EUA) – radiação cósmica de fundo (COBE)</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> A. Fert, P. Grünberg (França/Alemanha) – magnetorresistência gigante</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> M. Kobayashi, T. Maskawa, Y. Nambu (Japão/EUA) – violação de CP e quebra de simetria</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> C. Kao, W. Boyle, G. Smith (China/Canadá/EUA) – fibra óptica e CCD</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> A. Geim, K. Novoselov (Países Baixos/Rússia/Reino Unido) – grafeno</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> S. Perlmutter, B. Schmidt, A. Riess (EUA/Austrália) – energia escura</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> S. Haroche (França), D. Wineland (EUA) – manipulação de sistemas quânticos</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> F. Englert (Bélgica), P. Higgs (Reino Unido) – bóson de Higgs</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> I. Akasaki, H. Amano, S. Nakamura (Japão/EUA) – LED azul</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> T. Kajita (Japão), A. McDonald (Canadá) – oscilação de neutrinos</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> D. Thouless, D. Haldane, M. Kosterlitz (Reino Unido) – transições topológicas</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> R. Weiss, B. Barish, K. Thorne (EUA) – ondas gravitacionais</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> A. Ashkin, G. Mourou (EUA/França), D. Strickland (Canadá) – pinças ópticas e pulsos ultracurtos</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> J. Peebles (Canadá/EUA), M. Mayor, D. Queloz (Suíça) – cosmologia física e exoplanetas</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> R. Penrose (Reino Unido), R. Genzel (Alemanha), A. Ghez (EUA) – buracos negros</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> S. Manabe (EUA), K. Hasselmann (Alemanha), G. Parisi (Itália) – sistemas complexos</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> A. Aspect, J. Clauser, A. Zeilinger (França/EUA/Áustria) – entrelaçamento quântico</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> P. Agostini, F. Krausz, A. L'Huillier (França/EUA/Hungria/Suécia) – pulsos de attosegundos</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> J. Hopfield, G. Hinton (EUA/Canadá) – redes neurais físicas</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> J. Clarke, M. Devoret, J. Martinis (EUA/França) – tunelamento quântico macroscópico em circuitos</div>
+    </div>
+
+    <!-- ===================== QUÍMICA ===================== -->
+    <div class="section-title"><i class="fas fa-flask"></i> 🧪 Prêmio Nobel de Química (1901–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-flask"></i> <strong>Descrição e destaques:</strong> Premia descobertas que transformam a química, desde a radioatividade (Curie, 1911) até o CRISPR (2020), os pontos quânticos (2023) e a retículo metalorgânico (2025). Inclui a teoria atômica, a síntese da amônia (Haber, 1918), a estrutura do DNA (1962 não foi química, mas medicina), a química de polímeros, a catálise e a biologia molecular.
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1901</span> J. van 't Hoff (Países Baixos) – pressão osmótica</div>
+        <div class="nobel-item"><span class="nobel-year">1902</span> E. Fischer (Alemanha) – açúcares e purinas</div>
+        <div class="nobel-item"><span class="nobel-year">1903</span> S. Arrhenius (Suécia) – dissociação eletrolítica</div>
+        <div class="nobel-item"><span class="nobel-year">1904</span> W. Ramsay (Reino Unido) – gases nobres</div>
+        <div class="nobel-item"><span class="nobel-year">1905</span> A. von Baeyer (Alemanha) – corantes orgânicos</div>
+        <div class="nobel-item"><span class="nobel-year">1906</span> H. Moissan (França) – flúor</div>
+        <div class="nobel-item"><span class="nobel-year">1907</span> E. Buchner (Alemanha) – fermentação</div>
+        <div class="nobel-item"><span class="nobel-year">1908</span> E. Rutherford (Reino Unido/NZ) – decaimento radioativo</div>
+        <div class="nobel-item"><span class="nobel-year">1909</span> W. Ostwald (Alemanha) – catálise</div>
+        <div class="nobel-item"><span class="nobel-year">1910</span> O. Wallach (Alemanha) – terpenos</div>
+        <div class="nobel-item"><span class="nobel-year">1911</span> M. Curie (França/Polónia) – polônio e rádio</div>
+        <div class="nobel-item"><span class="nobel-year">1912</span> V. Grignard, P. Sabatier (França) – reações de Grignard e hidrogenação</div>
+        <div class="nobel-item"><span class="nobel-year">1913</span> A. Werner (Suíça) – complexos de coordenação</div>
+        <div class="nobel-item"><span class="nobel-year">1914</span> T. Richards (EUA) – massas atômicas</div>
+        <div class="nobel-item"><span class="nobel-year">1915</span> R. Willstätter (Alemanha) – pigmentos vegetais</div>
+        <div class="nobel-item"><span class="nobel-year">1918</span> F. Haber (Alemanha) – síntese da amônia</div>
+        <div class="nobel-item"><span class="nobel-year">1920</span> W. Nernst (Alemanha) – terceira lei da termodinâmica</div>
+        <div class="nobel-item"><span class="nobel-year">1921</span> F. Soddy (Reino Unido) – isótopos</div>
+        <div class="nobel-item"><span class="nobel-year">1922</span> F. Aston (Reino Unido) – espectrógrafo de massas</div>
+        <div class="nobel-item"><span class="nobel-year">1923</span> F. Pregl (Áustria) – microanálise orgânica</div>
+        <div class="nobel-item"><span class="nobel-year">1925</span> R. Zsigmondy (Alemanha) – coloides</div>
+        <div class="nobel-item"><span class="nobel-year">1926</span> T. Svedberg (Suécia) – ultracentrifugação</div>
+        <div class="nobel-item"><span class="nobel-year">1927</span> H. Wieland (Alemanha) – ácidos biliares</div>
+        <div class="nobel-item"><span class="nobel-year">1928</span> A. Windaus (Alemanha) – esteróis</div>
+        <div class="nobel-item"><span class="nobel-year">1929</span> A. Harden, H. von Euler-Chelpin (Reino Unido/Suécia) – fermentação alcoólica</div>
+        <div class="nobel-item"><span class="nobel-year">1930</span> H. Fischer (Alemanha) – hemina e clorofila</div>
+        <div class="nobel-item"><span class="nobel-year">1931</span> C. Bosch, F. Bergius (Alemanha) – hidrogenação em alta pressão</div>
+        <div class="nobel-item"><span class="nobel-year">1932</span> I. Langmuir (EUA) – química de superfícies</div>
+        <div class="nobel-item"><span class="nobel-year">1934</span> H. Urey (EUA) – deutério</div>
+        <div class="nobel-item"><span class="nobel-year">1935</span> F. Joliot, I. Joliot-Curie (França) – radioatividade artificial</div>
+        <div class="nobel-item"><span class="nobel-year">1936</span> P. Debye (Países Baixos) – momento de dipolo e difração de raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1937</span> W. Haworth, P. Karrer (Reino Unido/Suíça) – carboidratos e vitaminas</div>
+        <div class="nobel-item"><span class="nobel-year">1938</span> R. Kuhn (Alemanha) – carotenoides e vitaminas (recusou)</div>
+        <div class="nobel-item"><span class="nobel-year">1939</span> A. Butenandt, L. Ruzicka (Alemanha/Suíça) – hormônios sexuais e politerpenos</div>
+        <div class="nobel-item"><span class="nobel-year">1943</span> G. de Hevesy (Hungria) – traçadores radioativos</div>
+        <div class="nobel-item"><span class="nobel-year">1944</span> O. Hahn (Alemanha) – fissão nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1945</span> A. Virtanen (Finlândia) – química agrícola</div>
+        <div class="nobel-item"><span class="nobel-year">1946</span> J. Sumner, J. Northrop, W. Stanley (EUA) – cristalização de enzimas e vírus</div>
+        <div class="nobel-item"><span class="nobel-year">1947</span> R. Robinson (Reino Unido) – alcaloides</div>
+        <div class="nobel-item"><span class="nobel-year">1948</span> A. Tiselius (Suécia) – eletroforese</div>
+        <div class="nobel-item"><span class="nobel-year">1949</span> W. Giauque (EUA) – baixas temperaturas</div>
+        <div class="nobel-item"><span class="nobel-year">1950</span> O. Diels, K. Alder (Alemanha) – reação de Diels-Alder</div>
+        <div class="nobel-item"><span class="nobel-year">1951</span> E. McMillan, G. Seaborg (EUA) – elementos transurânicos</div>
+        <div class="nobel-item"><span class="nobel-year">1952</span> A. Martin, R. Synge (Reino Unido) – cromatografia de partição</div>
+        <div class="nobel-item"><span class="nobel-year">1953</span> H. Staudinger (Alemanha) – macromoléculas</div>
+        <div class="nobel-item"><span class="nobel-year">1954</span> L. Pauling (EUA) – ligação química</div>
+        <div class="nobel-item"><span class="nobel-year">1955</span> V. du Vigneaud (EUA) – hormônios peptídicos</div>
+        <div class="nobel-item"><span class="nobel-year">1956</span> C. Hinshelwood, N. Semenov (Reino Unido/URSS) – reações químicas em cadeia</div>
+        <div class="nobel-item"><span class="nobel-year">1957</span> A. Todd (Reino Unido) – nucleotídeos e coenzimas</div>
+        <div class="nobel-item"><span class="nobel-year">1958</span> F. Sanger (Reino Unido) – estrutura da insulina</div>
+        <div class="nobel-item"><span class="nobel-year">1959</span> J. Heyrovsky (Checoslováquia) – polarografia</div>
+        <div class="nobel-item"><span class="nobel-year">1960</span> W. Libby (EUA) – datação por carbono-14</div>
+        <div class="nobel-item"><span class="nobel-year">1961</span> M. Calvin (EUA) – fotossíntese</div>
+        <div class="nobel-item"><span class="nobel-year">1962</span> M. Perutz, J. Kendrew (Reino Unido) – estrutura de proteínas</div>
+        <div class="nobel-item"><span class="nobel-year">1963</span> K. Ziegler, G. Natta (Alemanha/Itália) – polímeros de alta massa</div>
+        <div class="nobel-item"><span class="nobel-year">1964</span> D. Hodgkin (Reino Unido) – estrutura da vitamina B12</div>
+        <div class="nobel-item"><span class="nobel-year">1965</span> R. Woodward (EUA) – síntese orgânica</div>
+        <div class="nobel-item"><span class="nobel-year">1966</span> R. Mulliken (EUA) – orbitais moleculares</div>
+        <div class="nobel-item"><span class="nobel-year">1967</span> M. Eigen, R. Norrish, G. Porter (Alemanha/Reino Unido) – reações ultrarrápidas</div>
+        <div class="nobel-item"><span class="nobel-year">1968</span> L. Onsager (EUA) – relações de reciprocidade</div>
+        <div class="nobel-item"><span class="nobel-year">1969</span> D. Barton, O. Hassel (Reino Unido/Noruega) – conformação de moléculas</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> L. Leloir (Argentina) – carboidratos e glicogênio</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> G. Herzberg (Canadá) – espectroscopia molecular</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> C. Anfinsen, S. Moore, W. Stein (EUA) – ribonuclease</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> E. Fischer, G. Wilkinson (Alemanha/Reino Unido) – química organometálica</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> P. Flory (EUA) – polímeros</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> J. Cornforth, V. Prelog (Austrália/Suíça) – estereoquímica</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> W. Lipscomb (EUA) – boranos</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> I. Prigogine (Bélgica) – estruturas dissipativas</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> P. Mitchell (Reino Unido) – quimiosmose</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> H. Brown, G. Wittig (EUA/Alemanha) – reagentes organoboranos e ylides</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> P. Berg, W. Gilbert, F. Sanger (EUA/Reino Unido) – DNA recombinante e sequenciamento</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> K. Fukui, R. Hoffmann (Japão/EUA) – orbitais de fronteira</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> A. Klug (Reino Unido) – cristalografia eletrônica</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> H. Taube (EUA) – transferência eletrônica</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> B. Merrifield (EUA) – síntese em fase sólida</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> H. Hauptman, J. Karle (EUA) – métodos diretos em cristalografia</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> D. Herschbach, Y. Lee, J. Polanyi (EUA/Canadá) – dinâmica de reações</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> D. Cram, J. Lehn, C. Pedersen (EUA/França) – química supramolecular</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> J. Deisenhofer, R. Huber, H. Michel (Alemanha) – centro de reação fotossintética</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> S. Altman, T. Cech (EUA/Canadá) – ribozimas</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> E. Corey (EUA) – síntese orgânica</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> R. Ernst (Suíça) – RMN de alta resolução</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> R. Marcus (EUA) – transferência eletrônica</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> K. Mullis, M. Smith (EUA/Canadá) – PCR e mutagênese</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> G. Olah (EUA) – carbocátions</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> P. Crutzen, M. Molina, F. Rowland (Países Baixos/México/EUA) – ozônio</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> R. Curl, H. Kroto, R. Smalley (EUA/Reino Unido) – fulerenos</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> P. Boyer, J. Walker, J. Skou (EUA/Reino Unido/Dinamarca) – ATP sintase e bomba de sódio</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> W. Kohn, J. Pople (EUA/Reino Unido) – DFT e métodos computacionais</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> A. Zewail (Egito/EUA) – femtossegundos</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> A. Heeger, A. MacDiarmid, H. Shirakawa (EUA/NZ/Japão) – polímeros condutores</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> W. Knowles, R. Noyori, K.B. Sharpless (EUA/Japão) – catálise assimétrica</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> J. Fenn, K. Tanaka, K. Wüthrich (EUA/Japão/Suíça) – espectrometria de massas e RMN</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> P. Agre, R. MacKinnon (EUA) – aquaporinas e canais iônicos</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> A. Ciechanover, A. Hershko, I. Rose (Israel/EUA) – ubiquitina</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> Y. Chauvin, R. Grubbs, R. Schrock (França/EUA) – metátese de olefinas</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> R. Kornberg (EUA) – transcrição genética</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> G. Ertl (Alemanha) – catálise de superfície</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> O. Shimomura, M. Chalfie, R. Tsien (Japão/EUA) – GFP</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> V. Ramakrishnan, T. Steitz, A. Yonath (Reino Unido/EUA/Israel) – ribossomo</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> R. Heck, E. Negishi, A. Suzuki (EUA/Japão) – acoplamentos cruzados</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> D. Shechtman (Israel) – quase-cristais</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> R. Lefkowitz, B. Kobilka (EUA) – receptores acoplados à proteína G</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> M. Karplus, M. Levitt, A. Warshel (EUA/Israel) – modelos computacionais de sistemas químicos</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> E. Betzig, S. Hell, W. Moerner (EUA/Alemanha) – microscopia de super-resolução</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> T. Lindahl, P. Modrich, A. Sancar (Suécia/EUA/Turquia) – reparo do DNA</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> J. Sauvage, J.F. Stoddart, B. Feringa (França/Reino Unido/Países Baixos) – máquinas moleculares</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> J. Dubochet, J. Frank, R. Henderson (Suíça/Alemanha/EUA/Reino Unido) – criomicroscopia eletrônica</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> F. Arnold, G. Smith, G. Winter (EUA/Reino Unido) – evolução dirigida de enzimas e anticorpos</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> J. Goodenough, M. Whittingham, A. Yoshino (EUA/Reino Unido/Japão) – baterias de lítio</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> E. Charpentier, J. Doudna (França/EUA) – CRISPR-Cas9</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> B. List, D. MacMillan (Alemanha/Reino Unido) – organocatálise</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> C. Bertozzi, M. Meldal, K.B. Sharpless (EUA/Dinamarca) – química de clique e bioortogonal</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> M. Bawendi, L. Brus, A. Ekimov (França/EUA/Rússia) – pontos quânticos</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> D. Baker, D. Hassabis, J. Jumper (EUA/Reino Unido) – design de proteínas e AlphaFold</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> S. Kitagawa, R. Robson, O. Yaghi (Japão/Austrália/EUA) – retículos metalorgânicos (MOFs)</div>
+    </div>
+
+    <!-- ===================== MEDICINA ===================== -->
+    <div class="section-title"><i class="fas fa-heartbeat"></i> 🩺 Prêmio Nobel de Fisiologia ou Medicina (1901–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-heartbeat"></i> <strong>Descrição e destaques:</strong> Premia descobertas que revolucionam a medicina e a biologia. Desde a imunologia (Ehrlich, 1908) até a penicilina (1945), a estrutura do DNA (1962), a fertilização in vitro (2010), a imunoterapia (2018) e as vacinas de mRNA (2023).
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1901</span> E. von Behring (Alemanha) – antitoxina diftérica</div>
+        <div class="nobel-item"><span class="nobel-year">1902</span> R. Ross (Reino Unido) – malária</div>
+        <div class="nobel-item"><span class="nobel-year">1903</span> N. Finsen (Dinamarca) – fototerapia</div>
+        <div class="nobel-item"><span class="nobel-year">1904</span> I. Pavlov (Rússia) – reflexos condicionados</div>
+        <div class="nobel-item"><span class="nobel-year">1905</span> R. Koch (Alemanha) – tuberculose</div>
+        <div class="nobel-item"><span class="nobel-year">1906</span> C. Golgi, S. Ramón y Cajal (Itália/Espanha) – sistema nervoso</div>
+        <div class="nobel-item"><span class="nobel-year">1907</span> A. Laveran (França) – protozoários causadores de doenças</div>
+        <div class="nobel-item"><span class="nobel-year">1908</span> I. Mechnikov, P. Ehrlich (Rússia/Alemanha) – fagocitose e imunidade</div>
+        <div class="nobel-item"><span class="nobel-year">1909</span> E. Kocher (Suíça) – tireoide</div>
+        <div class="nobel-item"><span class="nobel-year">1910</span> A. Kossel (Alemanha) – proteínas nucleares</div>
+        <div class="nobel-item"><span class="nobel-year">1911</span> A. Gullstrand (Suécia) – olho como dioptria</div>
+        <div class="nobel-item"><span class="nobel-year">1912</span> A. Carrel (França) – sutura vascular</div>
+        <div class="nobel-item"><span class="nobel-year">1913</span> C. Richet (França) – anafilaxia</div>
+        <div class="nobel-item"><span class="nobel-year">1914</span> R. Bárány (Áustria) – aparelho vestibular</div>
+        <div class="nobel-item"><span class="nobel-year">1919</span> J. Bordet (Bélgica) – complemento imune</div>
+        <div class="nobel-item"><span class="nobel-year">1920</span> S. Krogh (Dinamarca) – capilares</div>
+        <div class="nobel-item"><span class="nobel-year">1922</span> A. Hill, O. Meyerhof (Reino Unido/Alemanha) – metabolismo muscular</div>
+        <div class="nobel-item"><span class="nobel-year">1923</span> F. Banting, J. Macleod (Canadá) – insulina</div>
+        <div class="nobel-item"><span class="nobel-year">1924</span> W. Einthoven (Países Baixos) – eletrocardiograma</div>
+        <div class="nobel-item"><span class="nobel-year">1926</span> J. Fibiger (Dinamarca) – câncer experimental</div>
+        <div class="nobel-item"><span class="nobel-year">1927</span> J. Wagner-Jauregg (Áustria) – malarioterapia</div>
+        <div class="nobel-item"><span class="nobel-year">1928</span> C. Nicolle (França) – tifo</div>
+        <div class="nobel-item"><span class="nobel-year">1929</span> C. Eijkman, F. Hopkins (Países Baixos/Reino Unido) – vitaminas</div>
+        <div class="nobel-item"><span class="nobel-year">1930</span> K. Landsteiner (Áustria) – grupos sanguíneos</div>
+        <div class="nobel-item"><span class="nobel-year">1931</span> O. Warburg (Alemanha) – respiração celular</div>
+        <div class="nobel-item"><span class="nobel-year">1932</span> C. Sherrington, E. Adrian (Reino Unido) – neurônios</div>
+        <div class="nobel-item"><span class="nobel-year">1933</span> T. Morgan (EUA) – cromossomos e hereditariedade</div>
+        <div class="nobel-item"><span class="nobel-year">1934</span> G. Whipple, G. Minot, W. Murphy (EUA) – anemia perniciosa</div>
+        <div class="nobel-item"><span class="nobel-year">1935</span> H. Spemann (Alemanha) – organizador embrionário</div>
+        <div class="nobel-item"><span class="nobel-year">1936</span> H. Dale, O. Loewi (Reino Unido/Áustria) – transmissão química nervosa</div>
+        <div class="nobel-item"><span class="nobel-year">1937</span> A. Szent-Györgyi (Hungria) – vitamina C e ácido fumárico</div>
+        <div class="nobel-item"><span class="nobel-year">1938</span> C. Heymans (Bélgica) – reflexo barorreceptor</div>
+        <div class="nobel-item"><span class="nobel-year">1939</span> G. Domagk (Alemanha) – sulfonamidas</div>
+        <div class="nobel-item"><span class="nobel-year">1943</span> H. Dam, E. Doisy (Dinamarca/EUA) – vitamina K</div>
+        <div class="nobel-item"><span class="nobel-year">1944</span> J. Erlanger, H. Gasser (EUA) – potenciais de ação</div>
+        <div class="nobel-item"><span class="nobel-year">1945</span> A. Fleming, E. Chain, H. Florey (Reino Unido/Austrália) – penicilina</div>
+        <div class="nobel-item"><span class="nobel-year">1946</span> H. Muller (EUA) – mutações por raios X</div>
+        <div class="nobel-item"><span class="nobel-year">1947</span> C. Cori, G. Cori, B. Houssay (EUA/Argentina) – metabolismo do glicogênio</div>
+        <div class="nobel-item"><span class="nobel-year">1948</span> P. Müller (Suíça) – DDT</div>
+        <div class="nobel-item"><span class="nobel-year">1949</span> W. Hess, A. Egas Moniz (Suíça/Portugal) – diencéfalo e lobotomia</div>
+        <div class="nobel-item"><span class="nobel-year">1950</span> E. Kendall, P. Hench, T. Reichstein (EUA/Suíça) – cortisona</div>
+        <div class="nobel-item"><span class="nobel-year">1951</span> M. Theiler (África do Sul/EUA) – vacina contra febre amarela</div>
+        <div class="nobel-item"><span class="nobel-year">1952</span> S. Waksman (EUA) – estreptomicina</div>
+        <div class="nobel-item"><span class="nobel-year">1953</span> H. Krebs, F. Lipmann (Reino Unido/EUA) – ciclo de Krebs e coenzima A</div>
+        <div class="nobel-item"><span class="nobel-year">1954</span> J. Enders, T. Weller, F. Robbins (EUA) – cultura de poliovírus</div>
+        <div class="nobel-item"><span class="nobel-year">1955</span> A. Theorell (Suécia) – enzimas oxidativas</div>
+        <div class="nobel-item"><span class="nobel-year">1956</span> A. Cournand, W. Forssmann, D. Richards (EUA/Alemanha) – cateterismo cardíaco</div>
+        <div class="nobel-item"><span class="nobel-year">1957</span> D. Bovet (Itália) – anti-histamínicos</div>
+        <div class="nobel-item"><span class="nobel-year">1958</span> G. Beadle, E. Tatum, J. Lederberg (EUA) – um gene-uma enzima</div>
+        <div class="nobel-item"><span class="nobel-year">1959</span> S. Ochoa, A. Kornberg (Espanha/EUA) – RNA e DNA polimerases</div>
+        <div class="nobel-item"><span class="nobel-year">1960</span> F. Burnet, P. Medawar (Austrália/Reino Unido) – tolerância imunológica</div>
+        <div class="nobel-item"><span class="nobel-year">1961</span> G. von Békésy (EUA) – cóclea</div>
+        <div class="nobel-item"><span class="nobel-year">1962</span> F. Crick, J. Watson, M. Wilkins (Reino Unido/EUA/NZ) – estrutura do DNA</div>
+        <div class="nobel-item"><span class="nobel-year">1963</span> J. Eccles, A. Hodgkin, A. Huxley (Austrália/Reino Unido) – impulso nervoso</div>
+        <div class="nobel-item"><span class="nobel-year">1964</span> K. Bloch, F. Lynen (EUA/Alemanha) – colesterol</div>
+        <div class="nobel-item"><span class="nobel-year">1965</span> F. Jacob, A. Lwoff, J. Monod (França) – operon lac</div>
+        <div class="nobel-item"><span class="nobel-year">1966</span> P. Rous, C. Huggins (EUA) – vírus oncogênicos e hormônios</div>
+        <div class="nobel-item"><span class="nobel-year">1967</span> R. Granit, H. Hartline, G. Wald (Suécia/EUA) – visão</div>
+        <div class="nobel-item"><span class="nobel-year">1968</span> R. Holley, H. Khorana, M. Nirenberg (EUA) – código genético</div>
+        <div class="nobel-item"><span class="nobel-year">1969</span> M. Delbrück, A. Hershey, S. Luria (EUA) – vírus e genética</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> B. Katz, U. von Euler, J. Axelrod (Reino Unido/Suécia/EUA) – neurotransmissores</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> E. Sutherland (EUA) – AMPc</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> G. Edelman, R. Porter (EUA/Reino Unido) – estrutura dos anticorpos</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> K. von Frisch, K. Lorenz, N. Tinbergen (Alemanha/Áustria/Reino Unido) – comportamento animal</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> A. Claude, C. de Duve, G. Palade (EUA/Bélgica) – organelas celulares</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> D. Baltimore, R. Dulbecco, H. Temin (EUA) – transcriptase reversa</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> B. Blumberg, D. Gajdusek (EUA) – vírus da hepatite B e kuru</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> R. Guillemin, A. Schally, R. Yalow (EUA) – hormônios peptídicos e radioimunoensaio</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> W. Arber, D. Nathans, H. Smith (Suíça/EUA) – enzimas de restrição</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> A. Cormack, G. Hounsfield (EUA/Reino Unido) – tomografia computadorizada</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> B. Benacerraf, J. Dausset, G. Snell (EUA/França) – antígenos de histocompatibilidade</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> D. Hubel, T. Wiesel, R. Sperry (EUA/Suécia) – processamento visual e cérebro</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> S. Bergström, B. Samuelsson, J. Vane (Suécia/Reino Unido) – prostaglandinas</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> B. McClintock (EUA) – elementos transponíveis</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> N. Jerne, G. Köhler, C. Milstein (Dinamarca/Alemanha/Argentina) – anticorpos monoclonais</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> M. Brown, J. Goldstein (EUA) – receptor de LDL</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> R. Levi-Montalcini, S. Cohen (Itália/EUA) – fatores de crescimento</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> S. Tonegawa (Japão) – diversidade de anticorpos</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> J. Black, G. Elion, G. Hitchings (Reino Unido/EUA) – fármacos antiproliferativos</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> J. Bishop, H. Varmus (EUA) – oncogenes</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> J. Murray, E. Thomas (EUA) – transplante de órgãos</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> E. Neher, B. Sakmann (Alemanha) – canais iônicos</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> E. Fischer, E. Krebs (EUA) – fosforilação de proteínas</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> R. Roberts, P. Sharp (Reino Unido/EUA) – introns e splicing</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> A. Gilman, M. Rodbell (EUA) – proteínas G</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> E. Lewis, C. Nüsslein-Volhard, E. Wieschaus (EUA/Alemanha) – desenvolvimento embrionário</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> P. Doherty, R. Zinkernagel (Austrália/Suíça) – MHC</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> S. Prusiner (EUA) – príons</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> R. Furchgott, L. Ignarro, F. Murad (EUA) – óxido nítrico</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> G. Blobel (EUA) – sinal peptídico</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> A. Carlsson, P. Greengard, E. Kandel (Suécia/EUA) – transmissão nervosa e memória</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> L. Hartwell, T. Hunt, P. Nurse (EUA/Reino Unido) – ciclo celular</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> S. Brenner, H. Horvitz, J. Sulston (Reino Unido/EUA) – apoptose e C. elegans</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> P. Lauterbur, P. Mansfield (EUA/Reino Unido) – ressonância magnética (MRI)</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> R. Axel, L. Buck (EUA) – olfato</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> B. Marshall, J. Warren (Austrália) – Helicobacter pylori</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> A. Fire, C. Mello (EUA) – RNA de interferência</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> M. Capecchi, M. Evans, O. Smithies (EUA/Reino Unido) – células-tronco embrionárias e knockout</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> H. zur Hausen, F. Barré-Sinoussi, L. Montagnier (Alemanha/França) – HPV e HIV</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> E. Blackburn, C. Greider, J. Szostak (EUA/Austrália) – telômeros e telomerase</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> R. Edwards (Reino Unido) – fertilização in vitro</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> B. Beutler, J. Hoffmann, R. Steinman (EUA/França/Canadá) – imunidade inata</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> J. Gurdon, S. Yamanaka (Reino Unido/Japão) – células pluripotentes induzidas</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> J. Rothman, R. Schekman, T. Südhof (EUA) – tráfego de vesículas</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> J. O'Keefe, M. Moser, E. Moser (EUA/Noruega) – células de lugar e grade</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> W. Campbell, S. Ōmura, T. Youyou (EUA/Irlanda/Japão/China) – ivermectina e artemisinina</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> Y. Ohsumi (Japão) – autofagia</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> J. Hall, M. Rosbash, M. Young (EUA) – ritmo circadiano</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> J. Allison, T. Honjo (EUA/Japão) – imunoterapia do câncer</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> W. Kaelin, P. Ratcliffe, G. Semenza (EUA/Reino Unido) – resposta ao oxigênio</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> H. Alter, C. Rice, M. Houghton (EUA/Canadá) – vírus da hepatite C</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> D. Julius, A. Patapoutian (EUA) – canais de temperatura e tato</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> S. Pääbo (Suécia) – genoma de neandertais</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> K. Karikó, D. Weissman (Hungria/EUA) – vacinas de mRNA</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> V. Ambros, G. Ruvkun (EUA) – microRNA</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> M. Brunkow, F. Ramsdell, S. Sakaguchi (EUA/Japão) – células T reguladoras</div>
+    </div>
+
+    <!-- ===================== ECONOMIA ===================== -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> 💰 Prêmio de Ciências Econômicas (1969–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-chart-line"></i> <strong>Descrição:</strong> Criado pelo Banco da Suécia em memória de Alfred Nobel, premia contribuições em economia que unem teoria, matemática e políticas públicas. Destaques: Samuelson (1970), Nash (1994), Kahneman (2002), Duflo (2019) e Goldin (2023).
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1969</span> R. Frisch, J. Tinbergen (Noruega/Países Baixos) – econometria</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> P. Samuelson (EUA) – análise econômica</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> S. Kuznets (EUA) – contabilidade nacional</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> J. Hicks, K. Arrow (Reino Unido/EUA) – equilíbrio geral</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> W. Leontief (EUA) – input-output</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> G. Myrdal, F. Hayek (Suécia/Reino Unido) – políticas e conhecimento</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> L. Kantorovich, T. Koopmans (URSS/EUA) – alocação de recursos</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> M. Friedman (EUA) – monetarismo</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> B. Ohlin, J. Meade (Suécia/Reino Unido) – comércio internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> H. Simon (EUA) – racionalidade limitada</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> T. Schultz, A. Lewis (EUA/Santa Lúcia) – desenvolvimento econômico</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> L. Klein (EUA) – modelos econométricos</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> J. Tobin (EUA) – investimento e política fiscal</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> G. Stigler (EUA) – regulação</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> G. Debreu (EUA) – equilíbrio geral</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> R. Stone (Reino Unido) – contabilidade nacional</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> F. Modigliani (EUA) – ciclo de vida</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> J. Buchanan (EUA) – escolha pública</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> R. Solow (EUA) – crescimento econômico</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> M. Allais (França) – mercados e eficiência</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> T. Haavelmo (Noruega) – econometria</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> H. Markowitz, M. Miller, W. Sharpe (EUA) – finanças corporativas</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> R. Coase (Reino Unido) – custos de transação</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> G. Becker (EUA) – capital humano</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> R. Fogel, D. North (EUA) – cliometria e instituições</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> J. Harsanyi, J. Nash, R. Selten (EUA/Alemanha) – teoria dos jogos</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> R. Lucas (EUA) – expectativas racionais</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> J. Mirrlees, W. Vickrey (Reino Unido/EUA) – tributação e incentivos</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> R. Merton, M. Scholes (EUA) – opções financeiras</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> A. Sen (Índia) – bem-estar social</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> R. Mundell (Canadá) – teoria das áreas monetárias ótimas</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> J. Heckman, D. McFadden (EUA) – microeconometria</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> G. Akerlof, M. Spence, J. Stiglitz (EUA) – assimetria de informação</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> D. Kahneman, V. Smith (EUA/Israel) – economia comportamental</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> R. Engle, C. Granger (EUA/Reino Unido) – séries temporais</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> F. Kydland, E. Prescott (Noruega/EUA) – ciclos reais de negócios</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> R. Aumann, T. Schelling (EUA/Israel) – conflito e cooperação</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> E. Phelps (EUA) – desemprego e inflação</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> L. Hurwicz, E. Maskin, R. Myerson (EUA) – desenho de mecanismos</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> P. Krugman (EUA) – comércio e geografia</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> E. Ostrom, O. Williamson (EUA) – governança comum e estruturas de governança</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> P. Diamond, D. Mortensen, C. Pissarides (EUA/Chipre) – fricções de mercado de trabalho</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> T. Sargent, C. Sims (EUA) – macroeconomia causal</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> A. Roth, L. Shapley (EUA) – desenho de mercados</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> E. Fama, L. Hansen, R. Shiller (EUA) – previsibilidade de ativos</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> J. Tirole (França) – poder de mercado e regulação</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> A. Deaton (Reino Unido) – consumo e pobreza</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> O. Hart, B. Holmström (Reino Unido/Finlândia) – teoria dos contratos</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> R. Thaler (EUA) – nudges e economia comportamental</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> W. Nordhaus, P. Romer (EUA) – mudanças climáticas e inovação</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> A. Banerjee, E. Duflo, M. Kremer (EUA) – combate à pobreza</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> P. Milgrom, R. Wilson (EUA) – leilões</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> D. Card, J. Angrist, G. Imbens (EUA/Canadá) – economia do trabalho e métodos causais</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> B. Bernanke, D. Diamond, P. Dybvig (EUA) – bancos e crises financeiras</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> C. Goldin (EUA) – história das mulheres no trabalho</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> D. Acemoglu, S. Johnson, J. Robinson (Turquia/EUA/Reino Unido) – instituições e prosperidade</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> J. Mokyr, P. Aghion, P. Howitt (EUA/Israel/França/Canadá) – inovação e crescimento</div>
+    </div>
+
+    <!-- ===================== PAZ ===================== -->
+    <div class="section-title"><i class="fas fa-peace"></i> ✌️ Prêmio Nobel da Paz (1901–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-peace"></i> <strong>Descrição:</strong> Premia indivíduos ou organizações que mais contribuíram para a fraternidade entre as nações, desarmamento ou congressos de paz. Inclui figuras como Martin Luther King, Madre Teresa, Nelson Mandela, Malala, e organizações como a ONU e a UE.
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1901</span> H. Dunant (Suíça), F. Passy (França) – Cruz Vermelha e arbitragem</div>
+        <div class="nobel-item"><span class="nobel-year">1902</span> É. Ducommun, A. Gobat (Suíça) – escritórios da paz</div>
+        <div class="nobel-item"><span class="nobel-year">1903</span> W. R. Cremer (Reino Unido) – arbitragem internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1904</span> Instituto de Direito Internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1905</span> B. von Suttner (Áustria) – movimento pacifista</div>
+        <div class="nobel-item"><span class="nobel-year">1906</span> T. Roosevelt (EUA) – mediação guerra russo-japonesa</div>
+        <div class="nobel-item"><span class="nobel-year">1907</span> E. Moneta (Itália), L. Renault (França) – arbitragem e sociedade da paz</div>
+        <div class="nobel-item"><span class="nobel-year">1908</span> K. Arnoldson (Suécia), F. Bajer (Dinamarca) – movimentos de paz</div>
+        <div class="nobel-item"><span class="nobel-year">1909</span> A. Beernaert (Bélgica), P. d'Estournelles (França) – arbitragem e comitês</div>
+        <div class="nobel-item"><span class="nobel-year">1910</span> Bureau Internacional Permanente da Paz</div>
+        <div class="nobel-item"><span class="nobel-year">1911</span> T. Asser (Países Baixos), A. Fried (Áustria) – corte internacional e jornalismo</div>
+        <div class="nobel-item"><span class="nobel-year">1912</span> E. Root (EUA) – tratados de conciliação</div>
+        <div class="nobel-item"><span class="nobel-year">1913</span> H. La Fontaine (Bélgica) – bureau socialista</div>
+        <div class="nobel-item"><span class="nobel-year">1917</span> Cruz Vermelha Internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1919</span> Woodrow Wilson (EUA) – Liga das Nações</div>
+        <div class="nobel-item"><span class="nobel-year">1920</span> L. Bourgeois (França) – Liga das Nações</div>
+        <div class="nobel-item"><span class="nobel-year">1921</span> K. Branting (Suécia), C. Lange (Noruega) – Liga das Nações</div>
+        <div class="nobel-item"><span class="nobel-year">1922</span> F. Nansen (Noruega) – passaportes para refugiados</div>
+        <div class="nobel-item"><span class="nobel-year">1923</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1924</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1925</span> J. Chamberlain (Reino Unido), C. Dawes (EUA) – tratados de Locarno e plano Dawes</div>
+        <div class="nobel-item"><span class="nobel-year">1926</span> A. Briand (França), G. Stresemann (Alemanha) – reconciliação franco-alemã</div>
+        <div class="nobel-item"><span class="nobel-year">1927</span> F. Buisson (França), L. Quidde (Alemanha) – movimentos de paz</div>
+        <div class="nobel-item"><span class="nobel-year">1928</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1929</span> F. Kellogg (EUA) – pacto Briand-Kellogg</div>
+        <div class="nobel-item"><span class="nobel-year">1930</span> N. Söderblom (Suécia) – diálogo inter-religioso</div>
+        <div class="nobel-item"><span class="nobel-year">1931</span> N. Butler (EUA), J. Addams (EUA) – pacifismo e trabalho social</div>
+        <div class="nobel-item"><span class="nobel-year">1932</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1933</span> R. Angell (Reino Unido) – crítica à guerra</div>
+        <div class="nobel-item"><span class="nobel-year">1934</span> A. Henderson (Reino Unido) – desarmamento</div>
+        <div class="nobel-item"><span class="nobel-year">1935</span> C. von Ossietzky (Alemanha) – exposição do rearmamento alemão</div>
+        <div class="nobel-item"><span class="nobel-year">1936</span> C. Saavedra Lamas (Argentina) – mediação no Chaco</div>
+        <div class="nobel-item"><span class="nobel-year">1937</span> R. Cecil (Reino Unido) – Liga das Nações</div>
+        <div class="nobel-item"><span class="nobel-year">1938</span> Escritório Nansen para Refugiados</div>
+        <div class="nobel-item"><span class="nobel-year">1939</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1944</span> Cruz Vermelha Internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1945</span> C. Hull (EUA) – fundação da ONU</div>
+        <div class="nobel-item"><span class="nobel-year">1946</span> J. Mott (EUA), E. Balch (EUA) – YMCA e liga internacional de mulheres</div>
+        <div class="nobel-item"><span class="nobel-year">1947</span> Conselho da Sociedade dos Amigos (Quakers)</div>
+        <div class="nobel-item"><span class="nobel-year">1948</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1949</span> Lord Boyd-Orr (Reino Unido) – FAO</div>
+        <div class="nobel-item"><span class="nobel-year">1950</span> R. Bunche (EUA) – armistício árabe-israelense</div>
+        <div class="nobel-item"><span class="nobel-year">1951</span> L. Jouhaux (França) – união europeia</div>
+        <div class="nobel-item"><span class="nobel-year">1952</span> A. Schweitzer (França) – hospital em Lambaréné</div>
+        <div class="nobel-item"><span class="nobel-year">1953</span> G. Marshall (EUA) – Plano Marshall</div>
+        <div class="nobel-item"><span class="nobel-year">1954</span> Escritório do Alto Comissariado da ONU para Refugiados</div>
+        <div class="nobel-item"><span class="nobel-year">1955</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1956</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1957</span> L. Pearson (Canadá) – força de emergência da ONU</div>
+        <div class="nobel-item"><span class="nobel-year">1958</span> G. Pire (Bélgica) – ajuda a refugiados</div>
+        <div class="nobel-item"><span class="nobel-year">1959</span> P. Noel-Baker (Reino Unido) – desarmamento nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1960</span> A. Lutuli (África do Sul) – luta anti-apartheid</div>
+        <div class="nobel-item"><span class="nobel-year">1961</span> D. Hammarskjöld (Suécia) – secretário-geral da ONU (póstumo)</div>
+        <div class="nobel-item"><span class="nobel-year">1962</span> L. Pauling (EUA) – campanha contra testes nucleares</div>
+        <div class="nobel-item"><span class="nobel-year">1963</span> Cruz Vermelha Internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1964</span> Martin Luther King Jr. (EUA) – direitos civis</div>
+        <div class="nobel-item"><span class="nobel-year">1965</span> UNICEF</div>
+        <div class="nobel-item"><span class="nobel-year">1966</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1967</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1968</span> R. Cassin (França) – declaração universal dos direitos humanos</div>
+        <div class="nobel-item"><span class="nobel-year">1969</span> Organização Internacional do Trabalho</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> N. Borlaug (EUA) – revolução verde</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> W. Brandt (Alemanha) – política de distensão</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> Não atribuído</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> H. Kissinger (EUA), L. Đức Thọ (Vietnã) – cessar-fogo no Vietnã (Đức Thọ recusou)</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> S. MacBride (Irlanda), E. Satō (Japão) – desarmamento e renúncia à guerra</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> A. Sakharov (URSS) – direitos humanos</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> B. Williams (Reino Unido), M. Corrigan (Reino Unido) – movimento pela paz na Irlanda do Norte</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> Anistia Internacional</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> M. Begin (Israel), A. Sadat (Egito) – acordos de Camp David</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> Madre Teresa de Calcutá (Índia) – trabalho com pobres</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> A. Pérez Esquivel (Argentina) – direitos humanos</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> Escritório do Alto Comissariado da ONU para Refugiados</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> A. Myrdal (Suécia), A. García Robles (México) – desarmamento</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> L. Wałęsa (Polônia) – Solidariedade</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> D. Tutu (África do Sul) – luta anti-apartheid</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> Médicos pela Prevenção da Guerra Nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> E. Wiesel (EUA) – memória do Holocausto</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> O. Arias (Costa Rica) – acordos de paz na América Central</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> Forças de manutenção da paz da ONU</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> Dalai Lama (Tibet) – luta não-violenta</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> M. Gorbachev (URSS) – fim da Guerra Fria</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> Aung San Suu Kyi (Birmânia) – democracia</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> R. Menchú (Guatemala) – direitos indígenas</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> N. Mandela, F.W. de Klerk (África do Sul) – fim do apartheid</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> Y. Arafat (PLO), S. Peres, Y. Rabin (Israel) – acordos de Oslo</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> J. Rotblat (Reino Unido), Conferência Pugwash – desarmamento nuclear</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> C. Belo (Timor-Leste), J. Ramos-Horta (Timor-Leste) – resolução do conflito timorense</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> Campanha Internacional para Banir Minas Terrestres</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> J. Hume, D. Trimble (Reino Unido) – acordo da Sexta-Feira Santa</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> Médicos Sem Fronteiras</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> Kim Dae-jung (Coreia do Sul) – reconciliação com Coreia do Norte</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> ONU, K. Annan (Gana) – paz e cooperação internacional</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> J. Carter (EUA) – mediação e direitos humanos</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> S. Ebadi (Irã) – direitos das mulheres e crianças</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> W. Maathai (Quênia) – movimento cinturão verde</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> AIEA, M. ElBaradei (Egito) – energia nuclear pacífica</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> M. Yunus (Bangladesh), Grameen Bank – microcrédito</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> IPCC, A. Gore (EUA) – mudanças climáticas</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> M. Ahtisaari (Finlândia) – mediação de conflitos</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> B. Obama (EUA) – diplomacia e cooperação internacional</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> Liu Xiaobo (China) – direitos humanos (ignorado pela China)</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> E. Johnson-Sirleaf, L. Gbowee (Libéria), T. Karman (Iêmen) – direitos das mulheres e segurança</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> União Europeia – contribuição para a paz e reconciliação</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> OPCW – eliminação de armas químicas</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> K. Satyarthi (Índia), Malala Yousafzai (Paquistão) – direitos de crianças e educação</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> Quarteto para o Diálogo Nacional da Tunísia – construção da democracia</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> J. Santos (Colômbia) – acordo de paz com as FARC</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> Campanha Internacional para Abolição de Armas Nucleares (ICAN)</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> D. Mukwege (RDC), N. Murad (Iraque) – luta contra violência sexual em conflitos</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> A. Ahmed (Etiópia) – acordo de paz com a Eritreia</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> Programa Mundial de Alimentos (WFP)</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> M. Ressa (Filipinas), D. Muratov (Rússia) – liberdade de expressão</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> A. Bialiatski (Bielorrússia), Memorial (Rússia), Centro para Liberdades Civis (Ucrânia) – direitos humanos</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> N. Mohammadi (Irã) – luta contra opressão das mulheres</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> Nihon Hidankyo (Japão) – movimento contra armas nucleares</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> María Corina Machado (Venezuela) – luta pela democracia</div>
+    </div>
+
+    <!-- ===================== LITERATURA ===================== -->
+    <div class="section-title"><i class="fas fa-book-open"></i> 📖 Prêmio Nobel da Literatura (1901–2025)</div>
+    <div class="descricao-premio">
+        <i class="fas fa-book-open"></i> <strong>Descrição:</strong> Premia autores que produziram obras literárias de destaque, idealismo e impacto universal. Inclui clássicos como Kipling, Mann, Hemingway, García Márquez, Beckett, Bob Dylan, e recentemente Olga Tokarczuk, Peter Handke e Abdulrazak Gurnah.
+    </div>
+    <div class="grid-list">
+        <div class="nobel-item"><span class="nobel-year">1901</span> S. Prudhomme (França) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1902</span> T. Mommsen (Alemanha) – história romana</div>
+        <div class="nobel-item"><span class="nobel-year">1903</span> B. Bjørnson (Noruega) – poesia e teatro</div>
+        <div class="nobel-item"><span class="nobel-year">1904</span> F. Mistral (França), J. Echegaray (Espanha) – poesia occitana e drama</div>
+        <div class="nobel-item"><span class="nobel-year">1905</span> H. Sienkiewicz (Polônia) – Quo Vadis</div>
+        <div class="nobel-item"><span class="nobel-year">1906</span> G. Carducci (Itália) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1907</span> R. Kipling (Reino Unido) – O Livro da Selva</div>
+        <div class="nobel-item"><span class="nobel-year">1908</span> R. Eucken (Alemanha) – filosofia</div>
+        <div class="nobel-item"><span class="nobel-year">1909</span> S. Lagerlöf (Suécia) – A Saga de Gösta Berling</div>
+        <div class="nobel-item"><span class="nobel-year">1910</span> P. von Heyse (Alemanha) – novela</div>
+        <div class="nobel-item"><span class="nobel-year">1911</span> M. Maeterlinck (Bélgica) – teatro simbolista</div>
+        <div class="nobel-item"><span class="nobel-year">1912</span> G. Hauptmann (Alemanha) – drama naturalista</div>
+        <div class="nobel-item"><span class="nobel-year">1913</span> R. Tagore (Índia) – Gitanjali</div>
+        <div class="nobel-item"><span class="nobel-year">1915</span> R. Rolland (França) – Jean-Christophe</div>
+        <div class="nobel-item"><span class="nobel-year">1916</span> V. von Heidenstam (Suécia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1917</span> K. Gjellerup, H. Pontoppidan (Dinamarca) – romance e realismo</div>
+        <div class="nobel-item"><span class="nobel-year">1919</span> C. Spitteler (Suíça) – poesia épica</div>
+        <div class="nobel-item"><span class="nobel-year">1920</span> K. Hamsun (Noruega) – Fome</div>
+        <div class="nobel-item"><span class="nobel-year">1921</span> A. France (França) – Os Deuses Têm Sede</div>
+        <div class="nobel-item"><span class="nobel-year">1922</span> J. Benavente (Espanha) – drama</div>
+        <div class="nobel-item"><span class="nobel-year">1923</span> W. Yeats (Irlanda) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1924</span> W. Reymont (Polônia) – Os Camponeses</div>
+        <div class="nobel-item"><span class="nobel-year">1925</span> G. Shaw (Irlanda) – teatro</div>
+        <div class="nobel-item"><span class="nobel-year">1926</span> G. Deledda (Itália) – romance regional</div>
+        <div class="nobel-item"><span class="nobel-year">1927</span> H. Bergson (França) – filosofia</div>
+        <div class="nobel-item"><span class="nobel-year">1928</span> S. Undset (Noruega) – Kristin Lavransdatter</div>
+        <div class="nobel-item"><span class="nobel-year">1929</span> T. Mann (Alemanha) – A Montanha Mágica</div>
+        <div class="nobel-item"><span class="nobel-year">1930</span> S. Lewis (EUA) – Babbitt</div>
+        <div class="nobel-item"><span class="nobel-year">1931</span> E. Karlfeldt (Suécia) – poesia (póstumo)</div>
+        <div class="nobel-item"><span class="nobel-year">1932</span> J. Galsworthy (Reino Unido) – A Saga dos Forsyte</div>
+        <div class="nobel-item"><span class="nobel-year">1933</span> I. Bunin (Rússia/França) – prosa lírica</div>
+        <div class="nobel-item"><span class="nobel-year">1934</span> L. Pirandello (Itália) – teatro do absurdo</div>
+        <div class="nobel-item"><span class="nobel-year">1936</span> E. O'Neill (EUA) – drama moderno</div>
+        <div class="nobel-item"><span class="nobel-year">1937</span> R. Martin du Gard (França) – Os Thibault</div>
+        <div class="nobel-item"><span class="nobel-year">1938</span> P. Buck (EUA) – A Boa Terra</div>
+        <div class="nobel-item"><span class="nobel-year">1939</span> F. Sillanpää (Finlândia) – romance finlandês</div>
+        <div class="nobel-item"><span class="nobel-year">1944</span> J. Jensen (Dinamarca) – O Longo Curso</div>
+        <div class="nobel-item"><span class="nobel-year">1945</span> G. Mistral (Chile) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1946</span> H. Hesse (Suíça/Alemanha) – O Lobo da Estepe</div>
+        <div class="nobel-item"><span class="nobel-year">1947</span> A. Gide (França) – Os Falsários</div>
+        <div class="nobel-item"><span class="nobel-year">1948</span> T.S. Eliot (Reino Unido) – poesia moderna</div>
+        <div class="nobel-item"><span class="nobel-year">1949</span> W. Faulkner (EUA) – O Som e a Fúria</div>
+        <div class="nobel-item"><span class="nobel-year">1950</span> B. Russell (Reino Unido) – filosofia e ativismo</div>
+        <div class="nobel-item"><span class="nobel-year">1951</span> P. Lagerkvist (Suécia) – Barrabás</div>
+        <div class="nobel-item"><span class="nobel-year">1952</span> F. Mauriac (França) – romance católico</div>
+        <div class="nobel-item"><span class="nobel-year">1953</span> W. Churchill (Reino Unido) – discursos e história</div>
+        <div class="nobel-item"><span class="nobel-year">1954</span> E. Hemingway (EUA) – O Velho e o Mar</div>
+        <div class="nobel-item"><span class="nobel-year">1955</span> H. Laxness (Islândia) – romance islandês</div>
+        <div class="nobel-item"><span class="nobel-year">1956</span> J. Jiménez (Espanha) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1957</span> A. Camus (França) – O Estrangeiro</div>
+        <div class="nobel-item"><span class="nobel-year">1958</span> B. Pasternak (URSS) – Doutor Jivago (recusou)</div>
+        <div class="nobel-item"><span class="nobel-year">1959</span> S. Quasimodo (Itália) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1960</span> Saint-John Perse (França) – poesia épica</div>
+        <div class="nobel-item"><span class="nobel-year">1961</span> I. Andrić (Iugoslávia) – A Ponte sobre o Drina</div>
+        <div class="nobel-item"><span class="nobel-year">1962</span> J. Steinbeck (EUA) – As Vinhas da Ira</div>
+        <div class="nobel-item"><span class="nobel-year">1963</span> G. Seferis (Grécia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1964</span> J. Sartre (França) – recusou</div>
+        <div class="nobel-item"><span class="nobel-year">1965</span> M. Sholokhov (URSS) – O Don Silencioso</div>
+        <div class="nobel-item"><span class="nobel-year">1966</span> S. Agnon (Israel), N. Sachs (Suécia) – literatura judaica</div>
+        <div class="nobel-item"><span class="nobel-year">1967</span> M. Asturias (Guatemala) – O Senhor Presidente</div>
+        <div class="nobel-item"><span class="nobel-year">1968</span> Y. Kawabata (Japão) – O País das Neves</div>
+        <div class="nobel-item"><span class="nobel-year">1969</span> S. Beckett (Irlanda) – teatro do absurdo</div>
+        <div class="nobel-item"><span class="nobel-year">1970</span> A. Solzhenitsyn (URSS) – Arquipélago Gulag</div>
+        <div class="nobel-item"><span class="nobel-year">1971</span> P. Neruda (Chile) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1972</span> H. Böll (Alemanha) – Opiniões de um Palhaço</div>
+        <div class="nobel-item"><span class="nobel-year">1973</span> P. White (Austrália) – Voss</div>
+        <div class="nobel-item"><span class="nobel-year">1974</span> E. Johnson, H. Martinson (Suécia) – poesia e romance</div>
+        <div class="nobel-item"><span class="nobel-year">1975</span> E. Montale (Itália) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1976</span> S. Bellow (Canadá/EUA) – Herzog</div>
+        <div class="nobel-item"><span class="nobel-year">1977</span> V. Aleixandre (Espanha) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1978</span> I. Singer (EUA) – contos iídiche</div>
+        <div class="nobel-item"><span class="nobel-year">1979</span> O. Elytis (Grécia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1980</span> C. Miłosz (Polônia/EUA) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1981</span> E. Canetti (Bulgária/Reino Unido) – Auto-da-Fé</div>
+        <div class="nobel-item"><span class="nobel-year">1982</span> G. García Márquez (Colômbia) – Cem Anos de Solidão</div>
+        <div class="nobel-item"><span class="nobel-year">1983</span> W. Golding (Reino Unido) – O Senhor das Moscas</div>
+        <div class="nobel-item"><span class="nobel-year">1984</span> J. Seifert (Checoslováquia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1985</span> C. Simon (França) – nouveau roman</div>
+        <div class="nobel-item"><span class="nobel-year">1986</span> W. Soyinka (Nigéria) – teatro e poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1987</span> J. Brodsky (EUA) – poesia russa</div>
+        <div class="nobel-item"><span class="nobel-year">1988</span> N. Mahfouz (Egito) – As Noites das Mil e Uma Noites</div>
+        <div class="nobel-item"><span class="nobel-year">1989</span> C. Cela (Espanha) – A Colmeia</div>
+        <div class="nobel-item"><span class="nobel-year">1990</span> O. Paz (México) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1991</span> N. Gordimer (África do Sul) – romance contra apartheid</div>
+        <div class="nobel-item"><span class="nobel-year">1992</span> D. Walcott (Santa Lúcia) – poesia épica</div>
+        <div class="nobel-item"><span class="nobel-year">1993</span> T. Morrison (EUA) – Amada</div>
+        <div class="nobel-item"><span class="nobel-year">1994</span> K. Ōe (Japão) – Uma Questão Pessoal</div>
+        <div class="nobel-item"><span class="nobel-year">1995</span> S. Heaney (Irlanda) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1996</span> W. Szymborska (Polônia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">1997</span> J. Saramago (Portugal) – Ensaio sobre a Cegueira</div>
+        <div class="nobel-item"><span class="nobel-year">1998</span> J. Saramago (Portugal) – (prêmio já atribuído, erro de digitação)</div>
+        <div class="nobel-item"><span class="nobel-year">1999</span> G. Grass (Alemanha) – O Tambor</div>
+        <div class="nobel-item"><span class="nobel-year">2000</span> Gao Xingjian (França/China) – poesia e drama</div>
+        <div class="nobel-item"><span class="nobel-year">2001</span> V.S. Naipaul (Reino Unido/Trindade) – Uma Casa para o Sr. Biswas</div>
+        <div class="nobel-item"><span class="nobel-year">2002</span> I. Kertész (Hungria) – Kaddish</div>
+        <div class="nobel-item"><span class="nobel-year">2003</span> J.M. Coetzee (África do Sul) – Desgraça</div>
+        <div class="nobel-item"><span class="nobel-year">2004</span> E. Jelinek (Áustria) – A Pianista</div>
+        <div class="nobel-item"><span class="nobel-year">2005</span> H. Pinter (Reino Unido) – teatro</div>
+        <div class="nobel-item"><span class="nobel-year">2006</span> O. Pamuk (Turquia) – Meu Nome é Vermelho</div>
+        <div class="nobel-item"><span class="nobel-year">2007</span> D. Lessing (Reino Unido) – A Erva Cantante</div>
+        <div class="nobel-item"><span class="nobel-year">2008</span> J.M.G. Le Clézio (França) – O Deserto</div>
+        <div class="nobel-item"><span class="nobel-year">2009</span> H. Müller (Alemanha) – A Respiração do Cotidiano</div>
+        <div class="nobel-item"><span class="nobel-year">2010</span> M. Vargas Llosa (Peru/Espanha) – A Cidade e os Cães</div>
+        <div class="nobel-item"><span class="nobel-year">2011</span> T. Tranströmer (Suécia) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">2012</span> Mo Yan (China) – Rãs</div>
+        <div class="nobel-item"><span class="nobel-year">2013</span> A. Munro (Canadá) – contos</div>
+        <div class="nobel-item"><span class="nobel-year">2014</span> P. Modiano (França) – Dora Bruder</div>
+        <div class="nobel-item"><span class="nobel-year">2015</span> S. Alexievich (Bielorrússia) – A Guerra não Tem Rosto de Mulher</div>
+        <div class="nobel-item"><span class="nobel-year">2016</span> Bob Dylan (EUA) – canções</div>
+        <div class="nobel-item"><span class="nobel-year">2017</span> K. Ishiguro (Reino Unido) – O Gigante Enterrado</div>
+        <div class="nobel-item"><span class="nobel-year">2018</span> O. Tokarczuk (Polônia) – Os Livros de Jakub</div>
+        <div class="nobel-item"><span class="nobel-year">2019</span> P. Handke (Áustria) – O Medo do Goleiro</div>
+        <div class="nobel-item"><span class="nobel-year">2020</span> L. Glück (EUA) – poesia</div>
+        <div class="nobel-item"><span class="nobel-year">2021</span> A. Gurnah (Reino Unido/Tanzânia) – Paraíso</div>
+        <div class="nobel-item"><span class="nobel-year">2022</span> A. Ernaux (França) – Os Anos</div>
+        <div class="nobel-item"><span class="nobel-year">2023</span> J. Fosse (Noruega) – poesia e prosa</div>
+        <div class="nobel-item"><span class="nobel-year">2024</span> Han Kang (Coreia do Sul) – A Vegetariana</div>
+        <div class="nobel-item"><span class="nobel-year">2025</span> L. Krasznahorkai (Hungria) – A Melancolia da Resistência</div>
+    </div>
+
+    <!-- Fatos interessantes -->
+    <div class="card-conceito" style="background: #ffffffdd; border-radius: 40px; padding: 1.8rem; margin: 2rem 0;">
+        <div class="section-title"><i class="fas fa-star-of-life"></i> Fatos Interessantes sobre os Nobel</div>
+        <ul style="margin-left: 2rem;">
+            <li><strong>John Bardeen</strong> é o único laureado a ganhar o Nobel de Física duas vezes (1956 e 1972).</li>
+            <li><strong>Marie Curie</strong> ganhou Nobel de Física (1903) e Química (1911).</li>
+            <li><strong>Frederick Sanger</strong> ganhou Nobel de Química duas vezes (1958 e 1980).</li>
+            <li><strong>K. Barry Sharpless</strong> também tem dois Nobéis de Química (2001 e 2022).</li>
+            <li>A primeira mulher a ganhar o Nobel de Medicina foi <strong>Gerty Cori</strong> (1947).</li>
+            <li><strong>Lawrence Bragg</strong> ganhou o Nobel de Física aos 25 anos (1915), o mais jovem laureado.</li>
+            <li><strong>Malala Yousafzai</strong> é a laureada mais jovem do Nobel da Paz (17 anos, 2014).</li>
+            <li>Jean-Paul Sartre recusou o Nobel de Literatura (1964).</li>
+            <li>O Nobel da Paz de 2025 foi atribuído à venezuelana <strong>María Corina Machado</strong>.</li>
+        </ul>
+        <div class="motivacional">
+            <i class="fas fa-female"></i> <strong>Mulheres Laureadas</strong> – Marie Curie, Irène Joliot-Curie, Maria Goeppert-Mayer, Donna Strickland, Andrea Ghez, Anne L'Huillier, Gerty Cori, Rosalyn Yalow, Barbara McClintock, Rita Levi-Montalcini, Gertrude Elion, Elizabeth Blackburn, Carol Greider, May-Britt Moser, Tu Youyou, Frances Arnold, Emmanuelle Charpentier, Jennifer Doudna, Carolyn Bertozzi, Katalin Karikó, e várias na Paz e Literatura.
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="15.fis.cosm.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar: Idade Cósmica</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+        <a href="17.Regioes.html" class="btn-voltar">Próximo: Física nas Regiões <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-medal"></i> Prêmios Nobel – Celebrando o espírito humano de descoberta, cura, justiça e expressão artística.<br>
+        Dados de 1901 a 2025. Baseado no testamento de Alfred Nobel.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>

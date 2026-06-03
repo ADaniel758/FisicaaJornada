@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☢️ Idade Atômica (1945–1970) – Bombas, Reatores e a Física de Partículas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fef5e6;
+            color: #1e2a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #ecd9b4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #b88746; border-radius: 10px; }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(125deg, #3a2a1a, #5a3e2a);
+            border-radius: 64px;
+            padding: 3rem 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: #fef0d9;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .badge {
+            background: #d9b48b;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #1e2a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            border-left: 8px solid #b16224;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+            color: #2d3e2b;
+        }
+
+        .card-conceito {
+            background: #ffffffdd;
+            backdrop-filter: blur(6px);
+            border-radius: 40px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9d5b5;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background: #fffcf5;
+            border-radius: 32px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f0e0ca;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            border-color: #c4a35a;
+            background: #fffef7;
+        }
+
+        .card i {
+            font-size: 2.2rem;
+            color: #b16224;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-events {
+            background: #e7ddce;
+            border-radius: 48px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .timeline-marker {
+            min-width: 180px;
+            background: white;
+            border-radius: 40px;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .motivacional {
+            background: #e8dcc8;
+            border-radius: 48px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-style: italic;
+            border-left: 6px solid #b16224;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #c4a35a;
+            color: #1e2a2e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn-voltar:hover {
+            background: #9e7a3e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #e2cfaa;
+            font-size: 0.85rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+        .animate-icon {
+            animation: bounce 1.5s infinite;
+        }
+        .region-tag {
+            font-weight: bold;
+            color: #b16224;
+            display: inline-block;
+            margin-top: 0.3rem;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge"><i class="fas fa-biohazard"></i> A Era do Átomo – Entre o Poder e a Consciência</div>
+        <h1><i class="fas fa-atom"></i> Idade Atômica (1945–1970) <br> Bombas, Reatores, Partículas e Medicina Nuclear</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto;">Do Projeto Manhattan à primeira bomba de hidrogênio, dos primeiros reatores nucleares à descoberta do quark — a física nuclear e de partículas transformou a sociedade, a medicina e a geopolítica.</p>
+        <i class="fas fa-arrow-down animate-icon" style="font-size: 2rem; margin-top: 1rem;"></i>
+    </div>
+
+    <!-- Contexto e progresso -->
+    <div class="card-conceito">
+        <div class="section-title" style="margin-top:0;"><i class="fas fa-chart-line"></i> A Era do Átomo: Entre a Destruição e a Cura</div>
+        <p>A Idade Atômica tem seu marco simbólico em 16 de julho de 1945, com o teste Trinity (primeira bomba atômica) e, semanas depois, as bombas de Hiroshima e Nagasaki. O fim da Segunda Guerra Mundial deixou claro que a física nuclear não era apenas teórica — ela podia devastar cidades. No entanto, o mesmo conhecimento que produziu armas também gerou energia elétrica a partir de reatores, salvou vidas com radioisótopos (diagnóstico e terapia) e abriu caminho para a física de partículas, revelando o universo subatômico. A corrida nuclear entre EUA e URSS impulsionou investimentos maciços em pesquisa, levando à criação de grandes laboratórios (CERN, Dubna, SLAC) e à descoberta de dezenas de novas partículas. Foi também a época da consolidação da <strong>medicina nuclear</strong> e da <strong>radioproteção</strong>.</p>
+        <div class="motivacional">
+            <i class="fas fa-quote-left"></i> “A física atômica mudou a face do mundo. Agora, cabe à humanidade usar esse poder com sabedoria ou perecer.” — J. Robert Oppenheimer (paráfrase) <i class="fas fa-quote-right"></i>
+        </div>
+        <p><strong>Progresso dos saberes:</strong> Em menos de 25 anos, a ciência avançou mais do que em séculos anteriores: aceleradores de partículas revelaram um zoológico de hádrons (píons, káons, hiperons), a antimatéria foi confirmada, o neutrino foi detectado experimentalmente, a força nuclear forte e fraca foram melhor compreendidas, e o modelo dos quarks (Gell-Mann) começou a organizar o caos. Na área médica, radioisótopos como cobalto-60 e iodo-131 tornaram-se rotina para tratar câncer. A engenharia nuclear desenvolveu reatores para energia elétrica e propulsão naval (submarinos).</p>
+    </div>
+
+    <!-- Linha do tempo dos principais eventos (1945-1970) -->
+    <div class="section-title"><i class="fas fa-chart-line"></i> Cronologia da Idade Atômica (1945–1970)</div>
+    <div class="timeline-events">
+        <div class="timeline-marker"><i class="fas fa-bomb"></i> 1945<br>Trinity, Hiroshima, Nagasaki</div>
+        <div class="timeline-marker"><i class="fas fa-charging-station"></i> 1946<br>Primeiro reator soviético (F-1)</div>
+        <div class="timeline-marker"><i class="fas fa-flask"></i> 1947<br>Descoberta do píon (Lattes, Powell)</div>
+        <div class="timeline-marker"><i class="fas fa-microscope"></i> 1951<br>Primeiro reator experimental produtor de eletricidade (EBR-I)</div>
+        <div class="timeline-marker"><i class="fas fa-radiation"></i> 1952<br>Primeira bomba de hidrogênio (Ivy Mike)</div>
+        <div class="timeline-marker"><i class="fas fa-atom"></i> 1954<br>Primeiro submarino nuclear (USS Nautilus)</div>
+        <div class="timeline-marker"><i class="fas fa-church"></i> 1954<br>CERN fundado</div>
+        <div class="timeline-marker"><i class="fas fa-chart-line"></i> 1964<br>Modelo dos quarks (Gell-Mann)</div>
+        <div class="timeline-marker"><i class="fas fa-telescope"></i> 1968<br>Alvarez (câmara de bolhas, Nobel)</div>
+    </div>
+
+    <!-- América do Norte -->
+    <div class="section-title"><i class="fas fa-globe-americas"></i> América do Norte – Projeto Manhattan e a Era dos Aceleradores</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-biohazard"></i><h3>J. Robert Oppenheimer (1904-1967) - EUA</h3><p>Diretor científico do Projeto Manhattan. Após a guerra, opôs-se à bomba de hidrogênio. Contribuições à física quântica e buracos negros.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Enrico Fermi (1901-1954) - Itália/EUA</h3><p>Construiu o primeiro reator nuclear (Chicago Pile-1, 1942). Estatística de Fermi-Dirac, interação fraca (Nobel 1938).</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>Edward Teller (1908-2003) - Hungria/EUA</h3><p>“Pai da bomba de hidrogênio”. Defesa nuclear, física de plasmas.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Leo Szilard (1898-1964) - Hungria/EUA</h3><p>Concebeu a reação nuclear em cadeia. Ativista contra armas nucleares.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Eugene Wigner (1902-1995) - Hungria/EUA</h3><p>Aplicação da teoria de grupos à física nuclear, projeto de reatores (Nobel 1963).</p></div>
+        <div class="card"><i class="fas fa-star-of-life"></i><h3>Hans Bethe (1906-2005) - Alemanha/EUA</h3><p>Ciclo CNO (estrelas), cálculo da massa crítica da bomba (Nobel 1967).</p></div>
+        <div class="card"><i class="fas fa-waveform"></i><h3>Richard Feynman (1918-1988) - EUA</h3><p>Eletrodinâmica quântica, diagramas de Feynman, participou do Projeto Manhattan (Nobel 1965).</p></div>
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Murray Gell-Mann (1929-2019) - EUA</h3><p>Modelo dos quarks, classificação de partículas, cromodinâmica quântica (Nobel 1969).</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>John Bardeen (1908-1991) - EUA</h3><p>Teoria BCS da supercondutividade (Nobel 1972) e transistor (Nobel 1956). Único a ganhar Nobel de Física duas vezes.</p></div>
+        <div class="card"><i class="fas fa-camera"></i><h3>Luis Walter Alvarez (1911-1988) - EUA</h3><p>Câmara de bolhas de hidrogênio, descoberta de ressonâncias de partículas (Nobel 1968).</p></div>
+        <div class="card"><i class="fas fa-clock"></i><h3>Willard Libby (1908-1980) - EUA</h3><p>Datação por carbono-14 (Nobel 1960), aplicação de radioisótopos na geologia.</p></div>
+        <div class="card"><i class="fas fa-flask"></i><h3>Glenn T. Seaborg (1912-1999) - EUA</h3><p>Elementos transurânicos (plutônio, amerício) (Nobel Química 1951).</p></div>
+        <div class="card"><i class="fas fa-medkit"></i><h3>John H. Lawrence (1904-1991) - EUA</h3><p>Pioneiro da medicina nuclear (radioisótopos no tratamento de câncer).</p></div>
+        <div class="card"><i class="fas fa-female"></i><h3>Rosalyn Yalow (1921-2011) - EUA</h3><p>Desenvolvimento do radioimunoensaio (Nobel Medicina 1977).</p></div>
+        <div class="card"><i class="fas fa-hard-hat"></i><h3>Herbert M. Parker (1910-1984) - Reino Unido/EUA</h3><p>Padrões de radioproteção, dosimetria.</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>John R. Lamarsh (1927-2023) - EUA</h3><p>Engenharia nuclear, análise de reatores.</p></div>
+    </div>
+
+    <!-- Europa -->
+    <div class="section-title"><i class="fas fa-globe-europe"></i> Europa – Física Nuclear, Aceleradores e Consciência Científica</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-atom"></i><h3>Niels Bohr (1885-1962) - Dinamarca</h3><p>Modelo do núcleo composto, defesa do controle internacional de armas nucleares (Nobel 1922).</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Otto Hahn (1879-1968) - Alemanha</h3><p>Descobridor da fissão nuclear (Nobel Química 1944).</p></div>
+        <div class="card"><i class="fas fa-female"></i><h3>Lise Meitner (1878-1968) - Áustria/Suécia</h3><p>Explicação teórica da fissão nuclear (negligenciada no Nobel).</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Werner Heisenberg (1901-1976) - Alemanha</h3><p>Chefe do programa nuclear alemão, princípio da incerteza (Nobel 1932).</p></div>
+        <div class="card"><i class="fas fa-chalkboard"></i><h3>Max Born (1882-1970) - Alemanha/Reino Unido</h3><p>Interpretação probabilística da mecânica quântica, cristalografia (Nobel 1954).</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>John Cockcroft (1897-1967) - Reino Unido</h3><p>Primeira desintegração artificial do núcleo (acelerador) (Nobel 1951).</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>Ernest Walton (1903-1995) - Irlanda</h3><p>Gerador Cockcroft-Walton, reações nucleares (Nobel 1951).</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Patrick Blackett (1897-1974) - Reino Unido</h3><p>Câmara de neblina controlada, descoberta do pósitron (Nobel 1948).</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Cecil Frank Powell (1903-1969) - Reino Unido</h3><p>Método de emulsão nuclear, descoberta do méson pi (Nobel 1950).</p></div>
+        <div class="card"><i class="fas fa-thermometer-half"></i><h3>Peter Kapitza (1894-1984) - URSS</h3><p>Física de baixas temperaturas, superfluididade (Nobel 1978).</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>Igor Tamm (1895-1971) - URSS</h3><p>Radiação Cherenkov, fusão termonuclear (Nobel 1958).</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Andrei Sakharov (1921-1989) - URSS</h3><p>Desenvolvedor da bomba de hidrogênio soviética, depois ativista pelos direitos humanos.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Yulii Khariton (1904-1996) - URSS</h3><p>Principal projetista da bomba atômica soviética (1949).</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>Gersh Budker (1918-1977) - URSS</h3><p>Aceleradores de partículas (resfriamento de feixes), físico de plasmas.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Bruno Pontecorvo (1913-1993) - Itália/URSS</h3><p>Neutrino, oscilação de neutrinos, física de reatores.</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>Edoardo Amaldi (1908-1989) - Itália</h3><p>Física nuclear e de partículas, co-fundador do CERN.</p></div>
+        <div class="card"><i class="fas fa-magnet"></i><h3>Louis Néel (1904-2000) - França</h3><p>Magnetismo de ferritas, aplicações em reatores (Nobel 1970).</p></div>
+        <div class="card"><i class="fas fa-flask"></i><h3>Bertrand Goldschmidt (1912-2002) - França</h3><p>Extração de plutônio, programa nuclear francês.</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Frédéric Joliot-Curie (1900-1958) - França</h3><p>Radioatividade artificial, reação em cadeia (Nobel Química 1935).</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Lew Kowarski (1907-1979) - Polônia/França</h3><p>Primeira reação em cadeia controlada na França, detetor de neutrinos.</p></div>
+    </div>
+
+    <!-- Ásia -->
+    <div class="section-title"><i class="fas fa-globe-asia"></i> Ásia – Do méson pi às bombas chinesas e indianas</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-atom"></i><h3>Hideki Yukawa (1907-1981) - Japão</h3><p>Previsão do méson pi (Nobel 1949), estudos sobre força nuclear.</p></div>
+        <div class="card"><i class="fas fa-waveform"></i><h3>Sin-Itiro Tomonaga (1906-1979) - Japão</h3><p>Eletrodinâmica quântica, renormalização (Nobel 1965).</p></div>
+        <div class="card"><i class="fas fa-chart-simple"></i><h3>Shoichi Sakata (1911-1970) - Japão</h3><p>Modelo de Sakata (hádrons compostos), física de partículas.</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Homi J. Bhabha (1909-1966) - Índia</h3><p>Programa nuclear indiano, raios cósmicos, espalhamento Bhabha.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Vikram Sarabhai (1919-1971) - Índia</h3><p>Física cósmica, reatores de pesquisa, programa espacial indiano.</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Raja Ramanna (1925-2004) - Índia</h3><p>Física nuclear, líder do primeiro teste nuclear indiano (1974).</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Huang Nianzu (1922-2015) - China</h3><p>Física nuclear teórica, programas nucleares chineses.</p></div>
+        <div class="card"><i class="fas fa-biohazard"></i><h3>Deng Jiaxian (1924-1986) - China</h3><p>Chefe do projeto da bomba atômica chinesa.</p></div>
+        <div class="card"><i class="fas fa-rocket"></i><h3>Qian Xuesen (1911-2009) - China</h3><p>Física de foguetes, programa espacial chinês.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Wu Youxun (1897-1977) - China</h3><p>Verificação experimental do espalhamento Compton.</p></div>
+        <div class="card"><i class="fas fa-atom"></i><h3>Zhou Guangzhao (1929-2019) - China</h3><p>Desenvolvimento de bombas atômicas e de hidrogênio chinesas.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Seishi Kikuchi (1902-1974) - Japão</h3><p>Efeito Kikuchi (difração de elétrons), física do estado sólido.</p></div>
+    </div>
+
+    <!-- América Latina -->
+    <div class="section-title"><i class="fas fa-globe-americas"></i> América Latina – Contribuições à Física de Partículas e Astrofísica</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-atom"></i><h3>César Lattes (1924-2005) - Brasil</h3><p>Codescobridor do méson pi (1947), pioneiro de emulsões nucleares em altas altitudes.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>José Leite Lopes (1918-2006) - Brasil</h3><p>Teoria de campos, proposta de bósons de calibre para interação fraca.</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>Mário Schenberg (1914-1990) - Brasil</h3><p>Astrofísica (anãs brancas), termodinâmica de buracos negros.</p></div>
+        <div class="card"><i class="fas fa-microscope"></i><h3>Marcelo Damy de Souza Santos (1914-2008) - Brasil</h3><p>Primeiro acelerador de partículas brasileiro.</p></div>
+        <div class="card"><i class="fas fa-charging-station"></i><h3>Manuel Sandoval Vallarta (1899-1977) - México</h3><p>Física de raios cósmicos (efeito latitudinal), geofísica.</p></div>
+    </div>
+
+    <!-- Oceania e África -->
+    <div class="section-title"><i class="fas fa-globe"></i> Oceania e África – Pioneiros da Fusão e da Tomografia</div>
+    <div class="grid-cards">
+        <div class="card"><i class="fas fa-church"></i><h3>Mark Oliphant (1901-2000) - Austrália</h3><p>Física nuclear, descobriu trítio e hélio-3, pioneiro da fusão termonuclear.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Ernest Rutherford (1871-1937) - Nova Zelândia</h3><p>(Anterior, mas sua escola influenciou toda a era atômica).</p></div>
+        <div class="card"><i class="fas fa-church"></i><h3>George Ellis (1939- ) - África do Sul</h3><p>Cosmologia, colaborador de Hawking.</p></div>
+        <div class="card"><i class="fas fa-medkit"></i><h3>Allan Cormack (1924-1998) - África do Sul/EUA</h3><p>Desenvolvimento da tomografia computadorizada (TC) – Nobel Medicina 1979.</p></div>
+    </div>
+
+    <!-- Principais áreas e legado -->
+    <div class="card-conceito">
+        <div class="section-title"><i class="fas fa-exchange-alt"></i> O Legado da Idade Atômica: Ciência, Poder e Responsabilidade</div>
+        <p>A Idade Atômica demonstrou o poder dual do conhecimento científico. Por um lado, a energia nuclear passou a abastecer cidades e submarinos; a medicina nuclear salvou milhões de vidas; os aceleradores de partículas revelaram a estrutura fundamental da matéria. Por outro, a ameaça da guerra nuclear e os acidentes radiológicos trouxeram à tona a necessidade de ética e controle. O período 1945-1970 também consolidou a colaboração científica internacional (CERN, Dubna) e a competição geopolítica (corrida armamentista). A física tornou-se uma atividade de grande escala, com equipes multidisciplinares e orçamentos nacionais.</p>
+        <div class="motivacional">
+            <i class="fas fa-hand-peace"></i> “O conhecimento do átomo nos deu o poder de destruir ou curar. A escolha é nossa, e a responsabilidade é de todos os cientistas.” — Inspirado em Niels Bohr
+        </div>
+    </div>
+
+    <!-- Navegação entre períodos -->
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+        <a href="09.fis.cont.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar: Idade Contemporânea (até 1945)</a>
+        <a href="index.html" class="btn-voltar"><i class="fas fa-home"></i> Índice Principal</a>
+        <a href="11.fis.espa.html" class="btn-voltar">Próximo: Idade Espacial <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <i class="fas fa-flask"></i> Jornada da Física – Idade Atômica (1945–1970): a fissão e a fusão moldam a geopolítica e a medicina.<br>
+        De Oppenheimer a Sakharov, de Lattes a Gell-Mann, a humanidade aprendeu a domar o núcleo e a questionar os limites da ciência.<br>
+        <strong><i class="fas fa-chalkboard-teacher"></i> Professor Anderson Daniel</strong> – "Curiosidade, rigor e esperança: o futuro da ciência está nas suas mãos."
+    </footer>
+</div>
+</body>
+</html>
